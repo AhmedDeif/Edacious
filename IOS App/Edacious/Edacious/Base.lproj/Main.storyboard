@@ -118,7 +118,7 @@
         <!--Verification View Controller-->
         <scene sceneID="LQa-ik-gMt">
             <objects>
-                <viewController id="Abh-Dw-DbO" customClass="VerificationViewController" customModule="Edacious" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerificationViewController" id="Abh-Dw-DbO" customClass="VerificationViewController" customModule="Edacious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K37-6O-seL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="267" width="375" height="133"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CountryCell" textLabel="WuT-Wh-uIe" style="IBUITableViewCellStyleDefault" id="F4D-0T-GTB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CountryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CountryCell" textLabel="WuT-Wh-uIe" style="IBUITableViewCellStyleDefault" id="F4D-0T-GTB" customClass="SelectedCountryTableViewCell" customModule="Edacious" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F4D-0T-GTB" id="9qc-5D-wrB">
@@ -138,44 +138,67 @@
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="countryLabel" destination="WuT-Wh-uIe" id="1zD-Zo-GdC"/>
                                             <segue destination="gHu-Xo-YSV" kind="showDetail" id="uLR-6B-6HW"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhoneNumberCell" id="h6R-hD-c7n">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PhoneNumberCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhoneNumberCell" id="h6R-hD-c7n" customClass="PhoneNumberTableViewCell" customModule="Edacious" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h6R-hD-c7n" id="pWl-u4-gzg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalCompressionResistancePriority="751" insetsLayoutMarginsFromSafeArea="NO" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KV-cz-oxq">
-                                                    <rect key="frame" x="15" y="10" width="352" height="24"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalCompressionResistancePriority="751" insetsLayoutMarginsFromSafeArea="NO" text="+88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KV-cz-oxq">
+                                                    <rect key="frame" x="15" y="0.0" width="56.5" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <size key="shadowOffset" width="0.0" height="6"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9p-Oc-htb">
-                                                    <rect key="frame" x="367" y="13.5" width="8" height="17"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9p-Oc-htb">
+                                                    <rect key="frame" x="92" y="6.5" width="263" height="30.5"/>
+                                                    <color key="textColor" red="0.6705882352941176" green="0.6705882352941176" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPK-Qg-Ern">
+                                                    <rect key="frame" x="90" y="-0.5" width="2" height="44"/>
+                                                    <color key="backgroundColor" red="0.6705882352941176" green="0.6705882352941176" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="2" id="0be-sr-RRc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="J9p-Oc-htb" firstAttribute="centerY" secondItem="6KV-cz-oxq" secondAttribute="centerY" id="5lH-NE-IRC"/>
-                                                <constraint firstItem="6KV-cz-oxq" firstAttribute="leading" secondItem="pWl-u4-gzg" secondAttribute="leading" constant="15" id="HNJ-Vl-341"/>
-                                                <constraint firstItem="J9p-Oc-htb" firstAttribute="leading" secondItem="6KV-cz-oxq" secondAttribute="trailing" id="KqE-j8-9KF"/>
-                                                <constraint firstItem="6KV-cz-oxq" firstAttribute="centerY" secondItem="pWl-u4-gzg" secondAttribute="centerY" id="kcx-oB-JaH"/>
-                                                <constraint firstAttribute="trailing" secondItem="J9p-Oc-htb" secondAttribute="trailing" id="muk-jl-5WM"/>
+                                                <constraint firstItem="J9p-Oc-htb" firstAttribute="height" secondItem="pWl-u4-gzg" secondAttribute="height" multiplier="0.7" id="3ji-EV-ifl"/>
+                                                <constraint firstItem="6KV-cz-oxq" firstAttribute="leading" secondItem="pWl-u4-gzg" secondAttribute="leading" constant="15" id="9m4-sN-0ov"/>
+                                                <constraint firstItem="J9p-Oc-htb" firstAttribute="leading" secondItem="nPK-Qg-Ern" secondAttribute="trailing" id="Q6U-8w-Ruo"/>
+                                                <constraint firstItem="J9p-Oc-htb" firstAttribute="centerY" secondItem="pWl-u4-gzg" secondAttribute="centerY" id="TEw-lJ-P9C"/>
+                                                <constraint firstItem="nPK-Qg-Ern" firstAttribute="leading" secondItem="6KV-cz-oxq" secondAttribute="trailing" constant="18.5" id="oe9-xq-tvp"/>
+                                                <constraint firstItem="nPK-Qg-Ern" firstAttribute="height" secondItem="pWl-u4-gzg" secondAttribute="height" id="pAE-Lu-ZtR"/>
+                                                <constraint firstItem="nPK-Qg-Ern" firstAttribute="centerY" secondItem="pWl-u4-gzg" secondAttribute="centerY" id="uzf-Ge-Xd7"/>
+                                                <constraint firstAttribute="trailing" secondItem="J9p-Oc-htb" secondAttribute="trailing" constant="20" id="wWz-IE-BhP"/>
+                                                <constraint firstItem="6KV-cz-oxq" firstAttribute="width" secondItem="pWl-u4-gzg" secondAttribute="width" multiplier="0.15" id="z95-84-Pec"/>
+                                                <constraint firstItem="6KV-cz-oxq" firstAttribute="centerY" secondItem="pWl-u4-gzg" secondAttribute="centerY" id="zwm-eG-bow"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="6KV-cz-oxq" firstAttribute="height" secondItem="h6R-hD-c7n" secondAttribute="height" id="zCu-ah-6sZ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="countryCodeLabel" destination="6KV-cz-oxq" id="PZO-u6-EhI"/>
+                                            <outlet property="phoneNumberTextbox" destination="J9p-Oc-htb" id="BQN-wB-MIv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -199,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ce5-2z-O3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="34"/>
+            <point key="canvasLocation" x="837.60000000000002" y="33.733133433283363"/>
         </scene>
         <!--Country Selection View Controller-->
         <scene sceneID="5YB-9r-Swt">
@@ -246,7 +269,7 @@
                                     <navigationItem title="Select Country" id="ybp-O5-Ol8">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9Ao-Uc-0dP">
                                             <connections>
-                                                <segue destination="Abh-Dw-DbO" kind="show" id="2X9-GI-cKs"/>
+                                                <segue destination="Abh-Dw-DbO" kind="show" identifier="countrySelectionToVerificationSegue" id="2X9-GI-cKs"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -276,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7el-jO-VMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="34"/>
+            <point key="canvasLocation" x="1601" y="-740"/>
         </scene>
     </scenes>
     <resources>
@@ -285,6 +308,7 @@
         <image name="logo" width="400" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6kN-Q8-u0P"/>
+        <segue reference="uLR-6B-6HW"/>
+        <segue reference="2X9-GI-cKs"/>
     </inferredMetricsTieBreakers>
 </document>

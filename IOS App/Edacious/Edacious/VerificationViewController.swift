@@ -11,14 +11,17 @@ import StepSlider
 
 class VerificationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
+    var selectedCountry: String?
+    var countries = [String:String]()
     @IBOutlet weak var phoneNumberTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadCountryCodes()
         addCustomSlider()
-        
-        // Do any additional setup after loading the view.
+        if (selectedCountry == nil) {
+            selectedCountry = countries.first?.key
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +30,32 @@ class VerificationViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2;
+        return 2
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.row == 0) {
-            return  tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
+                as! SelectedCountryTableViewCell
+            if (selectedCountry != nil) {
+                cell.setText(Country: selectedCountry!)
+            }
+            return cell
         }
         if (indexPath.row == 1) {
-            return tableView.dequeueReusableCell(withIdentifier: "PhoneNumberCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PhoneNumberCell", for: indexPath)
+                as! PhoneNumberTableViewCell
+            if (selectedCountry != nil) {
+                cell.setText(Country: "+" + countries[selectedCountry!]!)
+            }
+            else {
+                cell.setText(Country: "+20")
+            }
+            return cell
         }
         // code should fail
         print("Unexpected Behavior, There are more than two cells in the table view or it is empty.")
@@ -67,15 +87,15 @@ class VerificationViewController: UIViewController, UITableViewDataSource, UITab
         self.view.addSubview(customSlider)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func loadCountryCodes () {
+        var myDict: NSDictionary?
+        if let path = Bundle.main.path(forResource: "CountryPhoneExtensions", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)
+            let contents = NSDictionary(contentsOfFile: path) as? [String : String]
+            for item in contents! {
+                countries[item.key] = item.value
+            }
+        }
     }
-    */
 
 }

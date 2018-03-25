@@ -15,6 +15,7 @@ class CountrySelectionViewController: UIViewController, UITableViewDataSource, U
     var isSearching: Bool = false
     var sortedCountries: [String] = []
     var filteredCountries: [String] = []
+    var selectedCountry: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +49,19 @@ class CountrySelectionViewController: UIViewController, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         // save country choice and navigate back to previous view
-        
+        if (isSearching) {
+            
+            selectedCountry = filteredCountries[indexPath.row]
+        }
+        else {
+            selectedCountry = sortedCountries[indexPath.row]
+        }
+        // navigate back
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let verificationViewController = storyBoard.instantiateViewController(withIdentifier: "VerificationViewController") as! VerificationViewController
+        verificationViewController.selectedCountry = selectedCountry
+        self.present(verificationViewController, animated: true, completion: nil)
     }
     
     func initCountryList() {
@@ -72,5 +83,6 @@ class CountrySelectionViewController: UIViewController, UITableViewDataSource, U
             countryListTable.reloadData()
         }
     }
+
 
 }
