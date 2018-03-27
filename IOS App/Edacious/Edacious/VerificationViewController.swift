@@ -9,7 +9,7 @@
 import UIKit
 import StepSlider
 
-class VerificationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class VerificationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ViewControllerNavigatorDelegate {
     
     var selectedCountry: String?
     var countries = [String:String]()
@@ -49,6 +49,7 @@ class VerificationViewController: UIViewController, UITableViewDataSource, UITab
         if (indexPath.row == 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PhoneNumberCell", for: indexPath)
                 as! PhoneNumberTableViewCell
+            cell.delegateViewControllerNavigatorDelegate = self;
             if (selectedCountry != nil) {
                 cell.setText(Country: "+" + countries[selectedCountry!]!)
             }
@@ -60,6 +61,23 @@ class VerificationViewController: UIViewController, UITableViewDataSource, UITab
         // code should fail
         print("Unexpected Behavior, There are more than two cells in the table view or it is empty.")
         return UITableViewCell.init();
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Phone number entry cell has index 1
+        if (indexPath.row == 1) {
+            let cell = tableView.cellForRow(at: indexPath) as! PhoneNumberTableViewCell
+            // delete placeholder
+            cell.wasSelected()
+        }
+    }
+    
+    func navigateToController() {
+        print("In should return")
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let PhonenumberVerificationViewController = storyBoard.instantiateViewController(withIdentifier: "PhonenumberVerificationViewController") as! PhonenumberVerificationViewController
+        self.present(PhonenumberVerificationViewController, animated: true, completion: nil)
     }
     
     func addCustomSlider() {

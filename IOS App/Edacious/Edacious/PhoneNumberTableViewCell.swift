@@ -8,14 +8,16 @@
 
 import UIKit
 
-class PhoneNumberTableViewCell: UITableViewCell {
+class PhoneNumberTableViewCell: UITableViewCell, UITextFieldDelegate {
     
     @IBOutlet weak var countryCodeLabel: UILabel!
     @IBOutlet weak var phoneNumberTextbox: UITextField!
+    var delegateViewControllerNavigatorDelegate: VerificationViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        phoneNumberTextbox.delegate = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,5 +29,21 @@ class PhoneNumberTableViewCell: UITableViewCell {
     func setText(Country: String) {
         self.countryCodeLabel.text = Country
     }
-
+    
+    func wasSelected() {
+        print("in was selected")
+        phoneNumberTextbox.placeholder = ""
+        phoneNumberTextbox.isUserInteractionEnabled = true
+        phoneNumberTextbox.becomeFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.delegateViewControllerNavigatorDelegate?.navigateToController()
+        return true;
+    }
 }
+
+protocol ViewControllerNavigatorDelegate {
+    func navigateToController()
+}
+

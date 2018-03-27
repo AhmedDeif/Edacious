@@ -13,6 +13,7 @@
 		42639F832067EB9900D235F1 /* SelectedCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42639F822067EB9900D235F1 /* SelectedCountryTableViewCell.swift */; };
 		42639F852067EBAE00D235F1 /* PhoneNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42639F842067EBAE00D235F1 /* PhoneNumberTableViewCell.swift */; };
 		42639F8B206831C800D235F1 /* CountryPhoneExtensions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42639F8A206831C700D235F1 /* CountryPhoneExtensions.plist */; };
+		42639F8D20696FF300D235F1 /* PhonenumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42639F8C20696FF300D235F1 /* PhonenumberVerificationViewController.swift */; };
 		42F266FE2063CA96003296B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F266FD2063CA96003296B5 /* AppDelegate.swift */; };
 		42F267002063CA96003296B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F266FF2063CA96003296B5 /* ViewController.swift */; };
 		42F267032063CA96003296B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F267012063CA96003296B5 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		42639F822067EB9900D235F1 /* SelectedCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountryTableViewCell.swift; sourceTree = "<group>"; };
 		42639F842067EBAE00D235F1 /* PhoneNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTableViewCell.swift; sourceTree = "<group>"; };
 		42639F8A206831C700D235F1 /* CountryPhoneExtensions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountryPhoneExtensions.plist; sourceTree = "<group>"; };
+		42639F8C20696FF300D235F1 /* PhonenumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonenumberVerificationViewController.swift; sourceTree = "<group>"; };
 		42F266FA2063CA96003296B5 /* Edacious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edacious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F266FD2063CA96003296B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42F266FF2063CA96003296B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				42639F802067CC1400D235F1 /* CountryListCell.swift */,
 				42639F7E2067C05400D235F1 /* CountrySelectionViewController.swift */,
 				42F267012063CA96003296B5 /* Main.storyboard */,
+				42639F8C20696FF300D235F1 /* PhonenumberVerificationViewController.swift */,
 				42639F822067EB9900D235F1 /* SelectedCountryTableViewCell.swift */,
 				42639F8A206831C700D235F1 /* CountryPhoneExtensions.plist */,
 				42639F842067EBAE00D235F1 /* PhoneNumberTableViewCell.swift */,
@@ -239,6 +242,7 @@
 				42639F7F2067C05400D235F1 /* CountrySelectionViewController.swift in Sources */,
 				42639F812067CC1400D235F1 /* CountryListCell.swift in Sources */,
 				425BE9612064016900E49995 /* VerificationViewController.swift in Sources */,
+				42639F8D20696FF300D235F1 /* PhonenumberVerificationViewController.swift in Sources */,
 				42F267002063CA96003296B5 /* ViewController.swift in Sources */,
 				42639F852067EBAE00D235F1 /* PhoneNumberTableViewCell.swift in Sources */,
 				42F266FE2063CA96003296B5 /* AppDelegate.swift in Sources */,

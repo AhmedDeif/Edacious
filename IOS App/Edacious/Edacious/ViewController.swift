@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //  Set color of string "food lovers" to red
         let attributedString: NSMutableAttributedString = NSMutableAttributedString(string: self.sloganLabel.text!);
         attributedString.setColorForStr(textToFind: "food lovers", color: UIColor(red:  237.0 / 255.0, green: 56.0 / 255.0, blue: 81.0 / 255.0, alpha: 1.0));
