@@ -12,6 +12,7 @@ import StepSlider
 class PhonenumberVerificationViewController: ViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
+    var previousText: String = ""
     
     override func viewDidLoad() {
         addCustomSlider()
@@ -26,17 +27,34 @@ class PhonenumberVerificationViewController: ViewController, UITextFieldDelegate
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        if (textField.text?.count == 3) {
-            textField.text = textField.text! + "-"
+        // add a - after every 3 numbers and allow only 9 digits
+        if let number = textField.text?.replacingOccurrences(of: "-", with: ""),  number.count > 0 {
+            if (number.count % 3 == 0 ) {
+                if (number.count < 9 ) {
+                    if (previousText.last! == "-") {
+                        textField.text = String(textField.text!.prefix(textField.text!.count-1))
+                    }
+                    else {
+                        if (textField.text!.last != "-") {
+                            textField.text = textField.text! + "-"
+                        }
+                    }
+                }
+            }
         }
+        previousText = textField.text!
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // prevent the user from entering more than 6 digits
-        if (string.count == 6) {
-            return false;
+        if let number = textField.text?.replacingOccurrences(of: "-", with: ""), number.count >= 9 {
+            let newNumber = string.replacingOccurrences(of: "-", with: "")
+            if (range.location < 11) {
+                return true
+            }
+            return false
         }
-        return true;
+        return true
     }
     
     func styleTextField() {
@@ -47,7 +65,7 @@ class PhonenumberVerificationViewController: ViewController, UITextFieldDelegate
     
     func addCustomSlider() {
         // Slider dimensions
-        let customSlider = StepSlider.init(frame:CGRect(origin: CGPoint(x: 10,y :200), size: CGSize(width: self.view.bounds.maxX * 0.75, height:  self.view.bounds.maxY * 0.07)))
+        let customSlider = StepSlider.init(frame:CGRect(origin: CGPoint(x: 10,y :200), size: CGSize(width: self.view.bounds.maxX * 0.75, height:  self.view.bounds.maxY/2 * 0.3)))
         
         // Slider positioning
         customSlider.center = CGPoint.init(x: self.view.bounds.midX, y: self.view.bounds.maxY/5)

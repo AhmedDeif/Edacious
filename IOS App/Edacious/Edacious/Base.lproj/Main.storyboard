@@ -242,20 +242,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-Tx-wmj">
-                                <rect key="frame" x="37.5" y="201" width="300" height="51.5"/>
+                                <rect key="frame" x="37.5" y="256" width="300" height="51.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="tel"/>
                                 <connections>
                                     <action selector="textField:" destination="ehO-B1-8nQ" eventType="editingDidEnd" id="Cf1-Wm-2D3"/>
                                     <action selector="textField:" destination="qPp-B0-KMV" eventType="editingDidEnd" id="dC2-qS-TIC"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-5P-KnT">
-                                <rect key="frame" x="287.5" y="205" width="45" height="43.5"/>
+                                <rect key="frame" x="287.5" y="260" width="45" height="43.5"/>
                                 <state key="normal" title="Button" image="enter"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUl-oH-N4n">
+                                <rect key="frame" x="87.5" y="172" width="201" height="41"/>
+                                <string key="text">Enter the verification codeyou’ve received </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -263,10 +270,12 @@
                             <constraint firstItem="d4p-5P-KnT" firstAttribute="height" secondItem="3xr-Tx-wmj" secondAttribute="height" multiplier="0.85" id="DDw-gZ-y6g"/>
                             <constraint firstItem="Qa5-lb-yHf" firstAttribute="leading" secondItem="9ZS-mN-ZxL" secondAttribute="leading" id="Flw-is-4tg"/>
                             <constraint firstItem="3xr-Tx-wmj" firstAttribute="width" secondItem="9ZS-mN-ZxL" secondAttribute="width" multiplier="0.8" id="NN5-yB-6zH"/>
+                            <constraint firstItem="HUl-oH-N4n" firstAttribute="centerX" secondItem="9ZS-mN-ZxL" secondAttribute="centerX" id="OTR-qL-r5q"/>
                             <constraint firstItem="d4p-5P-KnT" firstAttribute="centerY" secondItem="3xr-Tx-wmj" secondAttribute="centerY" id="Qqp-Ty-gyg"/>
                             <constraint firstItem="d4p-5P-KnT" firstAttribute="width" secondItem="3xr-Tx-wmj" secondAttribute="width" multiplier="0.15" id="R9S-Wk-WnZ"/>
                             <constraint firstItem="Qa5-lb-yHf" firstAttribute="trailing" secondItem="9ZS-mN-ZxL" secondAttribute="trailing" id="UFc-uT-fIW"/>
-                            <constraint firstItem="3xr-Tx-wmj" firstAttribute="centerY" secondItem="9ZS-mN-ZxL" secondAttribute="centerY" multiplier="0.66" id="c7H-5Q-BRH"/>
+                            <constraint firstItem="HUl-oH-N4n" firstAttribute="centerY" secondItem="9ZS-mN-ZxL" secondAttribute="centerY" multiplier="0.56" id="ZVt-0T-KU1"/>
+                            <constraint firstItem="3xr-Tx-wmj" firstAttribute="centerY" secondItem="9ZS-mN-ZxL" secondAttribute="centerY" multiplier="0.82" id="c7H-5Q-BRH"/>
                             <constraint firstItem="Qa5-lb-yHf" firstAttribute="bottom" secondItem="9ZS-mN-ZxL" secondAttribute="bottom" id="eAc-Vh-iGC"/>
                             <constraint firstItem="3xr-Tx-wmj" firstAttribute="centerX" secondItem="9ZS-mN-ZxL" secondAttribute="centerX" id="eYP-dV-rOT"/>
                             <constraint firstItem="d4p-5P-KnT" firstAttribute="trailing" secondItem="3xr-Tx-wmj" secondAttribute="trailing" constant="-5" id="kcT-vK-Dif"/>
