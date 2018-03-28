@@ -21,7 +21,7 @@ class PhoneNumberTableViewCell: UITableViewCell, UITextFieldDelegate {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        super.setSelected(selected, animated: true)
 
         // Configure the view for the selected state
     }
@@ -31,7 +31,6 @@ class PhoneNumberTableViewCell: UITableViewCell, UITextFieldDelegate {
     }
     
     func wasSelected() {
-        print("in was selected")
         phoneNumberTextbox.placeholder = ""
         phoneNumberTextbox.isUserInteractionEnabled = true
         phoneNumberTextbox.becomeFirstResponder()

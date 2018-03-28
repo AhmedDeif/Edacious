@@ -255,10 +255,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-5P-KnT">
                                 <rect key="frame" x="287.5" y="260" width="45" height="43.5"/>
                                 <state key="normal" title="Button" image="enter"/>
+                                <connections>
+                                    <segue destination="9Ax-4z-uXc" kind="show" id="Ks0-dH-B7a"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUl-oH-N4n">
                                 <rect key="frame" x="87.5" y="172" width="201" height="41"/>
-                                <string key="text">Enter the verification codeyou’ve received </string>
+                                <string key="text">Enter the verification code
+you’ve received </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -290,7 +294,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKV-r4-suK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ehO-B1-8nQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2056.8000000000002" y="28.335832083958024"/>
+            <point key="canvasLocation" x="1628" y="34"/>
+        </scene>
+        <!--Preference View Controller-->
+        <scene sceneID="T5O-aN-y7w">
+            <objects>
+                <viewController id="9Ax-4z-uXc" customClass="PreferenceViewController" customModule="Edacious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="obG-CR-ppx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colorFill1" translatesAutoresizingMaskIntoConstraints="NO" id="tnZ-OI-whs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What type of food you usually prefer?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCT-sK-jFX">
+                                <rect key="frame" x="58.5" y="177" width="257" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-pn-kFV">
+                                <rect key="frame" x="165" y="578.5" width="44" height="44"/>
+                                <state key="normal" image="enter"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PCT-sK-jFX" firstAttribute="centerX" secondItem="Kzq-Rx-bmv" secondAttribute="centerX" id="IHa-eJ-pFC"/>
+                            <constraint firstItem="tnZ-OI-whs" firstAttribute="top" secondItem="obG-CR-ppx" secondAttribute="top" id="PIp-Xo-kwJ"/>
+                            <constraint firstItem="tnZ-OI-whs" firstAttribute="leading" secondItem="obG-CR-ppx" secondAttribute="leading" id="QSD-0h-b9J"/>
+                            <constraint firstAttribute="bottom" secondItem="tnZ-OI-whs" secondAttribute="bottom" id="ScJ-Sw-cuY"/>
+                            <constraint firstAttribute="trailing" secondItem="tnZ-OI-whs" secondAttribute="trailing" id="Zfa-RS-b4c"/>
+                            <constraint firstItem="Hys-pn-kFV" firstAttribute="centerX" secondItem="tnZ-OI-whs" secondAttribute="centerX" id="b3E-eE-gtm"/>
+                            <constraint firstItem="PCT-sK-jFX" firstAttribute="centerY" secondItem="Kzq-Rx-bmv" secondAttribute="centerY" multiplier="0.54" id="jOo-OP-2q1"/>
+                            <constraint firstItem="Hys-pn-kFV" firstAttribute="centerY" secondItem="tnZ-OI-whs" secondAttribute="centerY" multiplier="1.8" id="qxK-DT-OJ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kzq-Rx-bmv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32m-6P-b3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.5999999999999" y="33.733133433283363"/>
         </scene>
         <!--Country Selection View Controller-->
         <scene sceneID="5YB-9r-Swt">
@@ -377,6 +421,6 @@
         <image name="logo" width="400" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2X9-GI-cKs"/>
+        <segue reference="6kN-Q8-u0P"/>
     </inferredMetricsTieBreakers>
 </document>
