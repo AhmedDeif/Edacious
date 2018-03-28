@@ -20,6 +20,8 @@
 		42F267032063CA96003296B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F267012063CA96003296B5 /* Main.storyboard */; };
 		42F267052063CA96003296B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F267042063CA96003296B5 /* Assets.xcassets */; };
 		42F267082063CA96003296B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F267062063CA96003296B5 /* LaunchScreen.storyboard */; };
+		42F3E26D206B9DEA00C28EE1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3E26C206B9DEA00C28EE1 /* CollectionViewCell.swift */; };
+		42F3E26F206BE73E00C28EE1 /* RecipePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3E26E206BE73E00C28EE1 /* RecipePreference.swift */; };
 		66D2327B831429AE9AF9114D /* Pods_Edacious.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3368E507381B0DE7D68F1265 /* Pods_Edacious.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		42F267042063CA96003296B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42F267072063CA96003296B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42F267092063CA96003296B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F3E26C206B9DEA00C28EE1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		42F3E26E206BE73E00C28EE1 /* RecipePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePreference.swift; sourceTree = "<group>"; };
 		9C43DD01FBA84FE6E23D6F88 /* Pods-Edacious.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edacious.release.xcconfig"; path = "Pods/Target Support Files/Pods-Edacious/Pods-Edacious.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,8 @@
 				42F267042063CA96003296B5 /* Assets.xcassets */,
 				42F267062063CA96003296B5 /* LaunchScreen.storyboard */,
 				42F267092063CA96003296B5 /* Info.plist */,
+				42F3E26C206B9DEA00C28EE1 /* CollectionViewCell.swift */,
+				42F3E26E206BE73E00C28EE1 /* RecipePreference.swift */,
 			);
 			path = Edacious;
 			sourceTree = "<group>";
@@ -191,10 +197,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Edacious/Pods-Edacious-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScalingCarousel/ScalingCarousel.framework",
 				"${BUILT_PRODUCTS_DIR}/StepSlider/StepSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScalingCarousel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StepSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,12 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F3E26D206B9DEA00C28EE1 /* CollectionViewCell.swift in Sources */,
 				42639F8F206B905200D235F1 /* PreferenceViewController.swift in Sources */,
 				42639F7F2067C05400D235F1 /* CountrySelectionViewController.swift in Sources */,
 				42639F812067CC1400D235F1 /* CountryListCell.swift in Sources */,
 				425BE9612064016900E49995 /* VerificationViewController.swift in Sources */,
 				42639F8D20696FF300D235F1 /* PhonenumberVerificationViewController.swift in Sources */,
 				42F267002063CA96003296B5 /* ViewController.swift in Sources */,
+				42F3E26F206BE73E00C28EE1 /* RecipePreference.swift in Sources */,
 				42639F852067EBAE00D235F1 /* PhoneNumberTableViewCell.swift in Sources */,
 				42F266FE2063CA96003296B5 /* AppDelegate.swift in Sources */,
 				42639F832067EB9900D235F1 /* SelectedCountryTableViewCell.swift in Sources */,

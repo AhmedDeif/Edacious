@@ -7,5 +7,6 @@ target 'Edacious' do
 
   # Pods for Edacious
   pod 'StepSlider'
+  pod ‘ScalingCarousel’
 
 end

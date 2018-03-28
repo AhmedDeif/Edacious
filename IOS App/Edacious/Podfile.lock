@@ -1,12 +1,15 @@
 PODS:
+  - ScalingCarousel (1.0.3)
   - StepSlider (1.0.2)
 
 DEPENDENCIES:
+  - ScalingCarousel
   - StepSlider
 
 SPEC CHECKSUMS:
+  ScalingCarousel: c1ce9b7f97c423614773328b762b5b723ed9ff7e
   StepSlider: 67b0c59519e253df9de599043bc76397d68310b2
 
-PODFILE CHECKSUM: 18cd4a65779787eebf9037f704273e491b095ec5
+PODFILE CHECKSUM: dfff293bf924a7688db626b24d71989a4ddd95b6
 
 COCOAPODS: 1.4.0
