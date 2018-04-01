@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -260,7 +262,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUl-oH-N4n">
-                                <rect key="frame" x="87.5" y="172" width="201" height="41"/>
+                                <rect key="frame" x="87" y="172" width="201" height="41"/>
                                 <string key="text">Enter the verification code
 you’ve received </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -308,7 +310,7 @@ you’ve received </string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What type of food you usually prefer?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCT-sK-jFX">
-                                <rect key="frame" x="58.5" y="177" width="257" height="18"/>
+                                <rect key="frame" x="59" y="176.5" width="257" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -435,16 +437,16 @@ you’ve received </string>
             </objects>
             <point key="canvasLocation" x="2437.5999999999999" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Timeline View Controller-->
         <scene sceneID="UlK-um-Tlj">
             <objects>
-                <viewController id="CaN-px-mdv" sceneMemberID="viewController">
+                <viewController id="CaN-px-mdv" customClass="RecipeTimelineViewController" customModule="Edacious" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yqv-Gd-xI5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-OM-Z8R">
-                                <rect key="frame" x="-0.5" y="0.0" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-app" translatesAutoresizingMaskIntoConstraints="NO" id="PP1-F3-MJ7">
                                         <rect key="frame" x="169" y="33" width="37" height="37"/>
@@ -475,32 +477,104 @@ you’ve received </string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All the latest recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-HR-aJV">
-                                <rect key="frame" x="85.5" y="106.5" width="203.5" height="30"/>
+                                <rect key="frame" x="86" y="106.5" width="203.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find all the recent &amp; trending food recipe below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JL-6Q-e9O">
-                                <rect key="frame" x="46.5" y="144.5" width="281.5" height="14.5"/>
+                                <rect key="frame" x="47" y="144" width="281" height="14.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uyg-wS-Dmm">
+                                <rect key="frame" x="-0.5" y="178.5" width="375" height="488.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fwj-lL-b6W">
+                                    <size key="itemSize" width="332" height="220"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeViewCell" id="Tee-Lt-Z0q" customClass="RecipeCollectionViewCell" customModule="Edacious" customModuleProvider="target">
+                                        <rect key="frame" x="21.5" y="0.0" width="332" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="332" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer2" translatesAutoresizingMaskIntoConstraints="NO" id="9o8-fe-4NK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="332" height="143"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avocado Ice Cream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaa-dJ-g4R">
+                                                    <rect key="frame" x="20" y="154" width="332" height="23"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                    <color key="textColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nam dapidu created this recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKj-Wv-9ot">
+                                                    <rect key="frame" x="20" y="179" width="332" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-Tc-KBC">
+                                                    <rect key="frame" x="262" y="115.5" width="55" height="55"/>
+                                                    <state key="normal" image="favorite"/>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="eaa-dJ-g4R" firstAttribute="width" secondItem="Tee-Lt-Z0q" secondAttribute="width" id="0a1-60-9n1"/>
+                                            <constraint firstItem="2w5-Tc-KBC" firstAttribute="centerY" secondItem="9o8-fe-4NK" secondAttribute="bottom" id="Apv-SV-j9W"/>
+                                            <constraint firstItem="eaa-dJ-g4R" firstAttribute="leading" secondItem="Tee-Lt-Z0q" secondAttribute="leadingMargin" constant="12" id="GGK-o2-fvt"/>
+                                            <constraint firstItem="zKj-Wv-9ot" firstAttribute="width" secondItem="Tee-Lt-Z0q" secondAttribute="width" id="RDt-2F-SXS"/>
+                                            <constraint firstItem="eaa-dJ-g4R" firstAttribute="top" secondItem="9o8-fe-4NK" secondAttribute="bottom" constant="11" id="RhO-7C-x0C"/>
+                                            <constraint firstAttribute="trailing" secondItem="2w5-Tc-KBC" secondAttribute="trailing" constant="15" id="Yt3-25-Prb"/>
+                                            <constraint firstItem="zKj-Wv-9ot" firstAttribute="leading" secondItem="eaa-dJ-g4R" secondAttribute="leading" id="auF-AC-nqL"/>
+                                            <constraint firstItem="9o8-fe-4NK" firstAttribute="width" secondItem="Tee-Lt-Z0q" secondAttribute="width" id="kTl-Y5-Pmg"/>
+                                            <constraint firstItem="9o8-fe-4NK" firstAttribute="height" secondItem="Tee-Lt-Z0q" secondAttribute="height" multiplier="0.65" id="pca-5J-Chh"/>
+                                            <constraint firstItem="9o8-fe-4NK" firstAttribute="top" secondItem="Tee-Lt-Z0q" secondAttribute="top" id="reK-V4-JcI"/>
+                                            <constraint firstItem="zKj-Wv-9ot" firstAttribute="top" secondItem="eaa-dJ-g4R" secondAttribute="bottom" constant="2" id="uTu-j3-obK"/>
+                                            <constraint firstItem="9o8-fe-4NK" firstAttribute="centerX" secondItem="Tee-Lt-Z0q" secondAttribute="centerX" id="vn0-6u-YQi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="addToFavoriteButton" destination="2w5-Tc-KBC" id="QhS-6f-KzO"/>
+                                            <outlet property="imageView" destination="9o8-fe-4NK" id="64b-yz-kiJ"/>
+                                            <outlet property="recipeDescriptionLabel" destination="zKj-Wv-9ot" id="JQv-KG-u8M"/>
+                                            <outlet property="titleLabel" destination="eaa-dJ-g4R" id="80j-XQ-5DP"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="CaN-px-mdv" id="Ljs-j3-Zv3"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1JL-6Q-e9O" firstAttribute="width" secondItem="Yqv-Gd-xI5" secondAttribute="width" multiplier="0.75" id="1Cu-Kk-aIp"/>
                             <constraint firstItem="fx1-OM-Z8R" firstAttribute="centerX" secondItem="aaP-T2-U9q" secondAttribute="centerX" id="Eae-PT-8jo"/>
                             <constraint firstItem="fx1-OM-Z8R" firstAttribute="top" secondItem="Yqv-Gd-xI5" secondAttribute="top" id="FoT-BS-gpb"/>
+                            <constraint firstItem="aaP-T2-U9q" firstAttribute="bottom" secondItem="Uyg-wS-Dmm" secondAttribute="bottom" id="QKo-pm-pz3"/>
+                            <constraint firstItem="Uyg-wS-Dmm" firstAttribute="top" secondItem="1JL-6Q-e9O" secondAttribute="bottom" constant="20" id="RkV-8K-Afb"/>
                             <constraint firstItem="eXg-HR-aJV" firstAttribute="top" secondItem="aaP-T2-U9q" secondAttribute="centerY" multiplier="0.31" id="VLY-uo-ntA"/>
                             <constraint firstItem="eXg-HR-aJV" firstAttribute="centerX" secondItem="aaP-T2-U9q" secondAttribute="centerX" id="Vle-vR-OO8"/>
                             <constraint firstItem="fx1-OM-Z8R" firstAttribute="width" secondItem="Yqv-Gd-xI5" secondAttribute="width" id="Wrl-Mw-uR0"/>
+                            <constraint firstItem="Uyg-wS-Dmm" firstAttribute="centerX" secondItem="aaP-T2-U9q" secondAttribute="centerX" id="YvJ-CK-OTM"/>
+                            <constraint firstItem="Uyg-wS-Dmm" firstAttribute="width" secondItem="aaP-T2-U9q" secondAttribute="width" id="Z5E-8E-fsz"/>
                             <constraint firstItem="1JL-6Q-e9O" firstAttribute="centerY" secondItem="aaP-T2-U9q" secondAttribute="centerY" multiplier="0.44" id="n4e-vi-Pk8"/>
                             <constraint firstItem="fx1-OM-Z8R" firstAttribute="height" secondItem="Yqv-Gd-xI5" secondAttribute="height" multiplier="0.12" id="qth-dn-SBr"/>
                             <constraint firstItem="1JL-6Q-e9O" firstAttribute="centerX" secondItem="aaP-T2-U9q" secondAttribute="centerX" id="tz1-R8-6lf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aaP-T2-U9q"/>
                     </view>
+                    <connections>
+                        <outlet property="recipeCollectionView" destination="Uyg-wS-Dmm" id="DgV-gu-dH9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeY-6K-5FR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,7 +593,7 @@ you’ve received </string>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2o6-w8-HbK">
-                                <rect key="frame" x="0.0" y="129" width="375" height="538"/>
+                                <rect key="frame" x="0.0" y="128.5" width="375" height="538.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CountryNameCell" textLabel="WT3-mj-hRI" style="IBUITableViewCellStyleDefault" id="eax-DQ-gis" customClass="CountryListCell" customModule="Edacious" customModuleProvider="target">
@@ -587,8 +661,10 @@ you’ve received </string>
     <resources>
         <image name="colorFill1" width="375" height="667"/>
         <image name="enter" width="44" height="44"/>
+        <image name="favorite" width="55" height="55"/>
         <image name="illustration" width="285" height="267"/>
         <image name="invalidName" width="21" height="14"/>
+        <image name="layer2" width="355" height="143"/>
         <image name="layer4" width="355" height="143"/>
         <image name="like" width="31" height="31"/>
         <image name="logo" width="400" height="30"/>
