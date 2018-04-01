@@ -446,13 +446,53 @@ you’ve received </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-dn-1nc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="292.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poj-Mw-0kj">
+                                        <rect key="frame" x="40" y="47" width="70" height="93"/>
+                                        <state key="normal" image="feeds"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy2-H7-Xod">
+                                        <rect key="frame" x="152.5" y="46.5" width="70" height="95"/>
+                                        <state key="normal" image="recipe"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS3-ys-I63">
+                                        <rect key="frame" x="272.5" y="46.5" width="70" height="93"/>
+                                        <state key="normal" image="chats"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZN-QU-bzs">
+                                        <rect key="frame" x="40" y="168" width="70" height="93"/>
+                                        <state key="normal" image="favorite"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJF-KR-PKK">
+                                        <rect key="frame" x="152" y="168" width="70" height="93"/>
+                                        <state key="normal" image="profile"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xy-yp-haE">
+                                        <rect key="frame" x="272" y="165" width="70" height="96"/>
+                                        <state key="normal" image="settings"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.91764705882352937" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Qy2-H7-Xod" firstAttribute="centerX" secondItem="i9a-dn-1nc" secondAttribute="centerX" id="EdV-OM-skO"/>
+                                    <constraint firstItem="mS3-ys-I63" firstAttribute="top" secondItem="Qy2-H7-Xod" secondAttribute="top" id="HVV-J0-gYE"/>
+                                    <constraint firstItem="Poj-Mw-0kj" firstAttribute="centerY" secondItem="i9a-dn-1nc" secondAttribute="centerY" multiplier="0.64" id="M30-WP-I4g"/>
+                                    <constraint firstItem="bJF-KR-PKK" firstAttribute="centerX" secondItem="Qy2-H7-Xod" secondAttribute="centerX" id="Xer-9l-NcX"/>
+                                    <constraint firstItem="gZN-QU-bzs" firstAttribute="leading" secondItem="Poj-Mw-0kj" secondAttribute="leading" id="YED-d3-0GP"/>
+                                    <constraint firstItem="Qy2-H7-Xod" firstAttribute="top" secondItem="Poj-Mw-0kj" secondAttribute="top" id="ZgI-3J-2jd"/>
+                                    <constraint firstItem="2xy-yp-haE" firstAttribute="bottom" secondItem="bJF-KR-PKK" secondAttribute="bottom" id="gT1-IF-EZc"/>
+                                    <constraint firstItem="bJF-KR-PKK" firstAttribute="bottom" secondItem="gZN-QU-bzs" secondAttribute="bottom" id="hLh-OA-N4Q"/>
+                                    <constraint firstItem="mS3-ys-I63" firstAttribute="centerX" secondItem="i9a-dn-1nc" secondAttribute="centerX" multiplier="1.64" id="lF5-EG-S9d"/>
+                                    <constraint firstItem="Poj-Mw-0kj" firstAttribute="centerX" secondItem="i9a-dn-1nc" secondAttribute="centerX" multiplier="0.4" id="qNy-LC-3xE"/>
+                                    <constraint firstItem="gZN-QU-bzs" firstAttribute="top" secondItem="i9a-dn-1nc" secondAttribute="centerY" multiplier="1.15" id="wHV-i1-e1A"/>
+                                    <constraint firstItem="2xy-yp-haE" firstAttribute="centerX" secondItem="mS3-ys-I63" secondAttribute="centerX" id="zyI-FH-1bJ"/>
+                                </constraints>
                             </view>
                             <visualEffectView opaque="NO" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsH-k5-WI1">
-                                <rect key="frame" x="0.0" y="284.5" width="375" height="382.5"/>
+                                <rect key="frame" x="0.0" y="292.5" width="375" height="374.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ywQ-th-xmQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="382.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -469,7 +509,7 @@ you’ve received </string>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="LsH-k5-WI1" firstAttribute="leading" secondItem="Yx2-cl-du8" secondAttribute="leading" id="2cp-IN-Rzd"/>
-                            <constraint firstItem="i9a-dn-1nc" firstAttribute="height" secondItem="Yx2-cl-du8" secondAttribute="height" multiplier="0.44" id="5iO-a2-0cE"/>
+                            <constraint firstItem="i9a-dn-1nc" firstAttribute="height" secondItem="Yx2-cl-du8" secondAttribute="height" multiplier="0.452" id="5iO-a2-0cE"/>
                             <constraint firstItem="i9a-dn-1nc" firstAttribute="leading" secondItem="Yx2-cl-du8" secondAttribute="leading" id="8cX-BA-IA1"/>
                             <constraint firstItem="LsH-k5-WI1" firstAttribute="top" secondItem="i9a-dn-1nc" secondAttribute="bottom" id="DYM-DI-MMC"/>
                             <constraint firstAttribute="bottom" secondItem="LsH-k5-WI1" secondAttribute="bottom" id="Uxk-Fr-FuD"/>
@@ -712,10 +752,12 @@ you’ve received </string>
         </scene>
     </scenes>
     <resources>
+        <image name="chats" width="70" height="93"/>
         <image name="close" width="52" height="52"/>
         <image name="colorFill1" width="375" height="667"/>
         <image name="enter" width="44" height="44"/>
         <image name="favorite" width="70" height="93"/>
+        <image name="feeds" width="70" height="93"/>
         <image name="illustration" width="285" height="267"/>
         <image name="invalidName" width="21" height="14"/>
         <image name="layer2" width="355" height="143"/>
@@ -724,7 +766,10 @@ you’ve received </string>
         <image name="logo" width="400" height="30"/>
         <image name="logo-app" width="37" height="37"/>
         <image name="mapPng" width="20" height="20"/>
+        <image name="profile" width="70" height="93"/>
+        <image name="recipe" width="70" height="95"/>
         <image name="searchPng" width="21" height="21"/>
+        <image name="settings" width="70" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6kN-Q8-u0P"/>
