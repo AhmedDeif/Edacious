@@ -437,6 +437,56 @@ you’ve received </string>
             </objects>
             <point key="canvasLocation" x="2437.5999999999999" y="33.733133433283363"/>
         </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="Oyi-1I-sAf">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="iGm-3C-nCn" customClass="ModalViewController" customModule="Edacious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="W45-fU-Dfl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-dn-1nc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.91764705882352937" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <visualEffectView opaque="NO" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsH-k5-WI1">
+                                <rect key="frame" x="0.0" y="284.5" width="375" height="382.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ywQ-th-xmQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="382.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <blurEffect style="prominent"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYr-7j-6UT">
+                                <rect key="frame" x="161" y="578" width="52" height="52"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeButtonClicked:" destination="iGm-3C-nCn" eventType="touchUpInside" id="cjO-HT-egX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LsH-k5-WI1" firstAttribute="leading" secondItem="Yx2-cl-du8" secondAttribute="leading" id="2cp-IN-Rzd"/>
+                            <constraint firstItem="i9a-dn-1nc" firstAttribute="height" secondItem="Yx2-cl-du8" secondAttribute="height" multiplier="0.44" id="5iO-a2-0cE"/>
+                            <constraint firstItem="i9a-dn-1nc" firstAttribute="leading" secondItem="Yx2-cl-du8" secondAttribute="leading" id="8cX-BA-IA1"/>
+                            <constraint firstItem="LsH-k5-WI1" firstAttribute="top" secondItem="i9a-dn-1nc" secondAttribute="bottom" id="DYM-DI-MMC"/>
+                            <constraint firstAttribute="bottom" secondItem="LsH-k5-WI1" secondAttribute="bottom" id="Uxk-Fr-FuD"/>
+                            <constraint firstItem="Yx2-cl-du8" firstAttribute="trailing" secondItem="i9a-dn-1nc" secondAttribute="trailing" id="Wza-rd-AK5"/>
+                            <constraint firstItem="Yx2-cl-du8" firstAttribute="trailing" secondItem="LsH-k5-WI1" secondAttribute="trailing" id="Yrr-bN-ZRB"/>
+                            <constraint firstItem="i9a-dn-1nc" firstAttribute="width" secondItem="Yx2-cl-du8" secondAttribute="width" id="ZNs-Vx-Wby"/>
+                            <constraint firstItem="NYr-7j-6UT" firstAttribute="centerX" secondItem="Yx2-cl-du8" secondAttribute="centerX" id="bRQ-Xi-NsD"/>
+                            <constraint firstItem="NYr-7j-6UT" firstAttribute="centerY" secondItem="Yx2-cl-du8" secondAttribute="centerY" multiplier="1.76" id="eba-9I-oZA"/>
+                            <constraint firstItem="i9a-dn-1nc" firstAttribute="top" secondItem="W45-fU-Dfl" secondAttribute="top" id="si5-hC-NzJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yx2-cl-du8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6s-7k-e6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4020" y="-643"/>
+        </scene>
         <!--Recipe Timeline View Controller-->
         <scene sceneID="UlK-um-Tlj">
             <objects>
@@ -462,6 +512,9 @@ you’ve received </string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-bl-xwD">
                                         <rect key="frame" x="31" y="40" width="21" height="22"/>
                                         <state key="normal" image="invalidName"/>
+                                        <connections>
+                                            <segue destination="iGm-3C-nCn" kind="presentation" id="f47-lF-s7p"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.2196078431372549" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
@@ -521,7 +574,7 @@ you’ve received </string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2w5-Tc-KBC">
-                                                    <rect key="frame" x="262" y="115.5" width="55" height="55"/>
+                                                    <rect key="frame" x="247" y="96.5" width="70" height="93"/>
                                                     <state key="normal" image="favorite"/>
                                                 </button>
                                             </subviews>
@@ -659,9 +712,10 @@ you’ve received </string>
         </scene>
     </scenes>
     <resources>
+        <image name="close" width="52" height="52"/>
         <image name="colorFill1" width="375" height="667"/>
         <image name="enter" width="44" height="44"/>
-        <image name="favorite" width="55" height="55"/>
+        <image name="favorite" width="70" height="93"/>
         <image name="illustration" width="285" height="267"/>
         <image name="invalidName" width="21" height="14"/>
         <image name="layer2" width="355" height="143"/>

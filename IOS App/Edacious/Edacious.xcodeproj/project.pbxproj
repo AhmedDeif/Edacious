@@ -10,6 +10,7 @@
 		422B00502070FEEA0048D472 /* RecipeTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B004F2070FEEA0048D472 /* RecipeTimelineViewController.swift */; };
 		422B0052207107630048D472 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B0051207107630048D472 /* RecipeCollectionViewCell.swift */; };
 		422B0054207108660048D472 /* RecipeThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B0053207108660048D472 /* RecipeThumb.swift */; };
+		422B0056207117E40048D472 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B0055207117E40048D472 /* ModalViewController.swift */; };
 		425BE9612064016900E49995 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BE9602064016900E49995 /* VerificationViewController.swift */; };
 		42639F7F2067C05400D235F1 /* CountrySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42639F7E2067C05400D235F1 /* CountrySelectionViewController.swift */; };
 		42639F812067CC1400D235F1 /* CountryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42639F802067CC1400D235F1 /* CountryListCell.swift */; };
@@ -34,6 +35,7 @@
 		422B004F2070FEEA0048D472 /* RecipeTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTimelineViewController.swift; sourceTree = "<group>"; };
 		422B0051207107630048D472 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 		422B0053207108660048D472 /* RecipeThumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeThumb.swift; sourceTree = "<group>"; };
+		422B0055207117E40048D472 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		425BE9602064016900E49995 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		42639F7E2067C05400D235F1 /* CountrySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionViewController.swift; sourceTree = "<group>"; };
 		42639F802067CC1400D235F1 /* CountryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCell.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				42639F802067CC1400D235F1 /* CountryListCell.swift */,
 				42639F7E2067C05400D235F1 /* CountrySelectionViewController.swift */,
 				42F267012063CA96003296B5 /* Main.storyboard */,
+				422B0055207117E40048D472 /* ModalViewController.swift */,
 				422B0051207107630048D472 /* RecipeCollectionViewCell.swift */,
 				422B0053207108660048D472 /* RecipeThumb.swift */,
 				422B004F2070FEEA0048D472 /* RecipeTimelineViewController.swift */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				422B0054207108660048D472 /* RecipeThumb.swift in Sources */,
+				422B0056207117E40048D472 /* ModalViewController.swift in Sources */,
 				42F3E26D206B9DEA00C28EE1 /* CollectionViewCell.swift in Sources */,
 				42639F8F206B905200D235F1 /* PreferenceViewController.swift in Sources */,
 				42639F7F2067C05400D235F1 /* CountrySelectionViewController.swift in Sources */,

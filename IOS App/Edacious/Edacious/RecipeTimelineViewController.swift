@@ -18,6 +18,12 @@ class RecipeTimelineViewController: UIViewController, UICollectionViewDataSource
         initRecipeList()
     }
     
+    @IBAction func settingsButtonClicked(_ sender: Any) {
+        let modalView = ModalViewController()
+        modalView.modalPresentationStyle = .overCurrentContext
+        present(modalView, animated: true, completion: nil)
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
