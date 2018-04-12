@@ -7,108 +7,268 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DA199D195C145A2FBE09B245F3BC7CA /* StepSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = A25215A212E0C7FFA5347287F48BBB8D /* StepSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44DB36A5D35110269322A80703A82C82 /* ScalingCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC00EB02BDA560B3483F1CE22EB09BDB /* ScalingCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F4B9403FFA2854A8C117D2271E0FA8A /* ScalingCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29EFD0D0E64ECCA438AE56708444B65 /* ScalingCarouselLayout.swift */; };
-		58F5C3103F7EBAB3DD14F630AA84EE3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7981058507E0AF61DEF56C5FB362E302 /* Pods-Edacious-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0ACD4E63C637C8417296A1BC448D1 /* Pods-Edacious-dummy.m */; };
-		7A5B4903AD575BA71682A29544AB44A6 /* ScalingCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 632944D4F3F115B7D5E0670E006F12CC /* ScalingCarousel-dummy.m */; };
-		889E93F5CFD4E28F3973C334DAB1E314 /* ScalingCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DE5BC74101F8321B5527B1A4B6264D /* ScalingCarouselCell.swift */; };
-		9B51200311C3389B8B1C8931EDFF36BE /* StepSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C431B60B959B816AB2A938277036D3BE /* StepSlider.m */; };
-		AE71FC7565A21836028FFA6A51E4BC6F /* Pods-Edacious-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2C4D9F1727C9B34E389EACF1E27923 /* Pods-Edacious-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF0A43B7F47D941348821D17E1B30056 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EBB2D316F508934BAD6C774D3C231453 /* StepSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8EA348BB9250C17FAD8BF03D27D5E55 /* StepSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF4FBEBF0EBF952DF64D291E03EF7D85 /* StepSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A21C1A8971600FD8597B46EC9C15011 /* StepSlider-dummy.m */; };
-		F920B6F5E8A4FE303816F67A07B955C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FF85B0A754AE7A758D7D7FED3D762DBC /* ScalingCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832E95C1811A0FC7CAD9213DAC9B9C5 /* ScalingCarouselView.swift */; };
+		015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6E2B0D72996164490CD1ECDCFAC74 /* CosmosSettings.swift */; };
+		09B4606245325F50590DE91475EAB71B /* StepSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7548F5D8AF544BD5DB9F8A979FF21 /* StepSlider.m */; };
+		0C6DA3AD1C9C749161112C49398F4224 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ADB10F9203D0FCF55D5A80523A516D /* SegmentedPagerTabStripViewController.swift */; };
+		0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE61015A0D1A05C04890997BA5F3556 /* CosmosLocalizedRating.swift */; };
+		147921F8728391C47F99E5767C89B571 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519D35BF3AEC11B1E1E3B097A73C1A03 /* XLPagerTabStrip-dummy.m */; };
+		153A9D16EFA537FC32006486BD30B78C /* ScalingCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C2D361B28DCE72AD5975DB5025C244 /* ScalingCarousel-dummy.m */; };
+		179859C3C38814D92C9AABEED9CCF6F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		2025BA3D8454D2D9DF27405766592073 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30976949E7A61D0330B613A3A6E8ECBA /* SwipeDirection.swift */; };
+		23E7CF2B105F6CD8AEB12CCFE4A2536C /* Pods-Edacious-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2C4D9F1727C9B34E389EACF1E27923 /* Pods-Edacious-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8253CAB3FB039471D5AF1AEA22349FD /* CosmosSize.swift */; };
+		348FF16C80A0D33FE5284C0898439D4F /* ScalingCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E14320706C5F8ABEBB34D94E370FD1 /* ScalingCarouselCell.swift */; };
+		371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EF461367984DC1DD04B3291412703 /* CosmosDefaultSettings.swift */; };
+		3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 588C59B8C0C9D4DA8D2B4B1FBA2E2ECA /* Cosmos-dummy.m */; };
+		424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76017E8C78873EADB041A809CEB9B31 /* CosmosText.swift */; };
+		45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC417BFD82ACD8737409875948CE6AD0 /* CosmosView.swift */; };
+		4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C708B09955050AB1E66C588520F801D7 /* CosmosTouch.swift */; };
+		59DA205020397800E911C9FD6992271B /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E6AB6841DB43017F70F2063926AA02B3 /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61483AC2C47A3E854553BA3BF6CEAD3F /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FAFF850EAD9ABF4749D2048A5F27ED /* BarView.swift */; };
+		61657D8EF972A2872544BE7D84C71B7B /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905D76EB4F0742B532B87E2390C811FA /* ButtonCell.xib */; };
+		61BB0ADA351A7FCBD20C56C7B6F10BB7 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988092C39E2BDED6A93151AB8A59033 /* ButtonBarView.swift */; };
+		6295FD659102F86BD0BD7ABD379DA054 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 905D76EB4F0742B532B87E2390C811FA /* ButtonCell.xib */; };
+		7BAF22174A3A77C50E776F2A9AA0447C /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92A16B966F81D1C38248076AF199A4 /* IndicatorInfo.swift */; };
+		7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211BC86B4E5F69EC173DE05795D8DA8 /* CosmosAccessibility.swift */; };
+		7E3C9411419294DB55B48B282DC1AE64 /* ScalingCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FCBF24F0B1FE3964DBC602C6A48D3 /* ScalingCarouselView.swift */; };
+		7EED474611F32EE0671C2C73CDB6CD8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		7F047043689900EE6750C99C36F2824A /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D76EB24DFC53091C09A172FF31AE4 /* PagerTabStripViewController.swift */; };
+		86A099E25EF20B3D5E8386E7A7343CEE /* Pods-Edacious-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D0ACD4E63C637C8417296A1BC448D1 /* Pods-Edacious-dummy.m */; };
+		88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B6E6ABA6D0E5D08CCECF849B17B14 /* StarFillMode.swift */; };
+		8F3F8E2CE3F85051310C973698E38F0F /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B15411CBE4B2D88E215F8ABD9991B5 /* ButtonBarViewCell.swift */; };
+		980ED5968A5E420CA16FB9B9EB94144D /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA002E5AB7F51ADEE4DE4621798C40 /* PagerTabStripError.swift */; };
+		99C017C4DB1E2D549874913875AF74ED /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B4731132F632DC1A062E04DDC26C5334 /* XLPagerTabStrip.bundle */; };
+		99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D529534C7FDE88DC7295DF7B8E0B312 /* CosmosRating.swift */; };
+		9C83E3953D5DB92348BC45772B8CA3B4 /* StepSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = C554E9F74931D860ECC09109CFF9234A /* StepSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D5F99EA9EF099F7A79BB53BF01164B5 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513ADB0C1A4E4CF3B2CF9AD9E8BC2031 /* BarPagerTabStripViewController.swift */; };
+		A592068099B5B5CC8C9E28CC37372D36 /* ScalingCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B6268B9322082E0EE96DA11A81968B /* ScalingCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79840ADD49B4775C1524342D6551CFB /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC2183027FDA90ADDF5AABEC1C4F326 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A9C56D6D3C2F00D288EB3BFDC2AF0879 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DFA96DDAD3BAE6670D391D278C9171 /* FXPageControl.m */; };
+		AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DBB6F23780F93D85FFDCC94C2D888 /* CosmosLayers.swift */; };
+		B12CE2C130491705B3C0FB7E40BECA9F /* StepSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F507A81CE5F07778F27474A619AD08A2 /* StepSlider-dummy.m */; };
+		B55EF9F10CAD705067F4058408908D8F /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA928A8374303A230AA91ABD6B3593 /* ButtonBarPagerTabStripViewController.swift */; };
+		BCE0E291361150CF8A9494D7A6D432BF /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76723FBBF22ACB384260721C179B70A0 /* TwitterPagerTabStripViewController.swift */; };
+		BEC2A24F0E0691F46B9C77157A42B045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A93554345A1DED5CE66D7AFAA48CA /* RightToLeft.swift */; };
+		C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D22F0D88BDB214BBC930774339AFA /* StarLayer.swift */; };
+		CB12B145F07EEF22DDB8E3B389B8348E /* ScalingCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A1FF349BEE3B8C04AF710C96F1371 /* ScalingCarouselLayout.swift */; };
+		D58CD974FF05B4346E70B047030F003F /* StepSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E8AB2DFC825905E127F8AA395AE0BB7 /* StepSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9551808F69AE98000B6998542FC7FEC6 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB96B48A86294F31D9090C30E4184FC /* CosmosTouchTarget.swift */; };
+		E3DC35C8140C2D05C96BB66B80220421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F2D8D8842B3A86662177D1E7E9AF02B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7ABA22EF31D9F48577BC3D5528FBC /* CosmosLayerHelper.swift */; };
+		F81B79D8B7EB4BACCF8D955A91FA4948 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B59A57835793F6F85CEE5BAE479B3D /* PagerTabStripBehaviour.swift */; };
+		FFF053815A6B7FF199DECCE49C751161 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECAE534CA84E6E8034B90BDE3F4C5AB /* BaseButtonBarPagerTabStripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		186848D613C8A8108D7EDDDEE0209F26 /* PBXContainerItemProxy */ = {
+		27CC541262BEAA4F7017E91592B6A29F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F427185CE20E519CC597AFD5083CC27D;
-			remoteInfo = StepSlider;
+			remoteGlobalIDString = 7E156F0392617A8BAC2869F0E2241189;
+			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
 		};
-		AFF5640FC89B0FC6CA3CC8E979A68FBB /* PBXContainerItemProxy */ = {
+		3C5393C334051403E4AE31F58EF3A272 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D7D0DE4F8D75E97E6BDA61B0BD2C9D09;
+			remoteGlobalIDString = 4FDC533A4360A68ABDCE852F04B30927;
+			remoteInfo = Cosmos;
+		};
+		C0C484C3BFC61518344EEDE0FE1EBD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C29481CE04EF753B60FE6A0FF890702;
+			remoteInfo = XLPagerTabStrip;
+		};
+		E38DCDEAF3726A1D975427BB206250CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3F32A8B8FFA6D7D8070B9DD140D4C52;
 			remoteInfo = ScalingCarousel;
+		};
+		F4D5935CCACD762FA074250F19C32B4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72450866DE724FF857031D57D4261A27;
+			remoteInfo = StepSlider;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0666CB9BCCDD950F69B95F08B18B3CF0 /* Pods-Edacious-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Edacious-resources.sh"; sourceTree = "<group>"; };
+		08C6E2B0D72996164490CD1ECDCFAC74 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
 		0E59C8A290F77CAE20B16B2F9B9E616F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D1D0470CC84B003591158BC27600B40 /* ScalingCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScalingCarousel.xcconfig; sourceTree = "<group>"; };
-		22A4EF9AFE3F7CF18FD935203648DE11 /* Pods_Edacious.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Edacious.framework; path = "Pods-Edacious.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F4C22C1CF81929F01BFBBD1F9B4E532 /* ScalingCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScalingCarousel.modulemap; sourceTree = "<group>"; };
-		3832E95C1811A0FC7CAD9213DAC9B9C5 /* ScalingCarouselView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselView.swift; path = ScalingCarousel/Classes/ScalingCarouselView.swift; sourceTree = "<group>"; };
+		17F52CF15F6C75D4A54DDC6F59AB6125 /* StepSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepSlider.xcconfig; sourceTree = "<group>"; };
+		1966EBC4986EA9B2770313496E297E2F /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
+		1E38DE6E828056ECB545EFF43FADF1F2 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
+		2211BC86B4E5F69EC173DE05795D8DA8 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		2E8AB2DFC825905E127F8AA395AE0BB7 /* StepSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepSlider-umbrella.h"; sourceTree = "<group>"; };
+		30976949E7A61D0330B613A3A6E8ECBA /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
+		34DFA96DDAD3BAE6670D391D278C9171 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
+		37E14320706C5F8ABEBB34D94E370FD1 /* ScalingCarouselCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselCell.swift; path = ScalingCarousel/Classes/ScalingCarouselCell.swift; sourceTree = "<group>"; };
+		3A99AEB311A114B0E4A325B052EF5EA7 /* StepSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepSlider.framework; path = StepSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE61015A0D1A05C04890997BA5F3556 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
 		3DE7CE40D2691247EA5F7F313EFE5098 /* Pods-Edacious-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Edacious-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4399AF9E763B96B451236C4F2BFA281A /* ScalingCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScalingCarousel-prefix.pch"; sourceTree = "<group>"; };
-		4B774C340441BAA6246DE647C5D2C1E3 /* StepSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepSlider.modulemap; sourceTree = "<group>"; };
-		632944D4F3F115B7D5E0670E006F12CC /* ScalingCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScalingCarousel-dummy.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EC2183027FDA90ADDF5AABEC1C4F326 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
+		45C2D361B28DCE72AD5975DB5025C244 /* ScalingCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScalingCarousel-dummy.m"; sourceTree = "<group>"; };
+		4DE3FCB10087AE8E09D0C8EC24BEC774 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		513ADB0C1A4E4CF3B2CF9AD9E8BC2031 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		519D35BF3AEC11B1E1E3B097A73C1A03 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
+		54A7ABA22EF31D9F48577BC3D5528FBC /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		588C59B8C0C9D4DA8D2B4B1FBA2E2ECA /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		5A63D6D5EBB73F9E7A648261D96FF827 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		6164050475E24554B55E6E6ABB5AB82E /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6268126382CCD4E1E46256651FC0BCB4 /* Pods_Edacious.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Edacious.framework; path = "Pods-Edacious.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64FAFF850EAD9ABF4749D2048A5F27ED /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
 		681BEBF4A817A54F3C63E0552D5C1CA0 /* Pods-Edacious.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Edacious.modulemap"; sourceTree = "<group>"; };
-		6822E4D3E74D1B6B5D14F38FEC0A4DBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A21C1A8971600FD8597B46EC9C15011 /* StepSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepSlider-dummy.m"; sourceTree = "<group>"; };
-		762232D6B366DB09FA45420751C3E04F /* StepSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StepSlider.framework; path = StepSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7ACA487257590427D57BB30D47FCD331 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8511432B7F98ECBF9404C76A825C8CF8 /* StepSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepSlider-prefix.pch"; sourceTree = "<group>"; };
-		8C4C04D1E0799ACFFE13101129176A7C /* StepSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StepSlider.xcconfig; sourceTree = "<group>"; };
+		697917AD3CB068E058C39DE5D9C344B6 /* ScalingCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScalingCarousel.modulemap; sourceTree = "<group>"; };
+		713D72F89B02983AAE2031159D688254 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BF00B553A6A55E615F20A133D85639 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76723FBBF22ACB384260721C179B70A0 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		85B15411CBE4B2D88E215F8ABD9991B5 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		8AFDECDA64F47665EC59E1167ADBA0F2 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		8C92A16B966F81D1C38248076AF199A4 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
+		8DD7548F5D8AF544BD5DB9F8A979FF21 /* StepSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StepSlider.m; path = StepSlider/source/StepSlider/StepSlider.m; sourceTree = "<group>"; };
+		8ECAE534CA84E6E8034B90BDE3F4C5AB /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		8F55BEDCEB0B9F5B0E9D66509B3A53AC /* Pods-Edacious.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Edacious.debug.xcconfig"; sourceTree = "<group>"; };
+		905D76EB4F0742B532B87E2390C811FA /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		914A1FF349BEE3B8C04AF710C96F1371 /* ScalingCarouselLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselLayout.swift; path = ScalingCarousel/Classes/ScalingCarouselLayout.swift; sourceTree = "<group>"; };
+		92BCDF11F3AC4AE2B2FCABB79775EE4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937DB96AA4959A29173683244E597C1B /* ScalingCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScalingCarousel.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9551808F69AE98000B6998542FC7FEC6 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		99EA928A8374303A230AA91ABD6B3593 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		9C39255A2823254A884B96A441EE4369 /* Pods-Edacious-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Edacious-acknowledgements.plist"; sourceTree = "<group>"; };
-		A25215A212E0C7FFA5347287F48BBB8D /* StepSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StepSlider.h; path = StepSlider/source/StepSlider/StepSlider.h; sourceTree = "<group>"; };
+		9C8B6E6ABA6D0E5D08CCECF849B17B14 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		9D529534C7FDE88DC7295DF7B8E0B312 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		A40A93554345A1DED5CE66D7AFAA48CA /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
 		AE2C4D9F1727C9B34E389EACF1E27923 /* Pods-Edacious-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Edacious-umbrella.h"; sourceTree = "<group>"; };
-		B29EFD0D0E64ECCA438AE56708444B65 /* ScalingCarouselLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselLayout.swift; path = ScalingCarousel/Classes/ScalingCarouselLayout.swift; sourceTree = "<group>"; };
+		B15FCBF24F0B1FE3964DBC602C6A48D3 /* ScalingCarouselView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselView.swift; path = ScalingCarousel/Classes/ScalingCarouselView.swift; sourceTree = "<group>"; };
+		B4731132F632DC1A062E04DDC26C5334 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD0B31DCCC0E8BBB8E9D28B28B0AE4 /* Pods-Edacious-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Edacious-frameworks.sh"; sourceTree = "<group>"; };
-		B8EA348BB9250C17FAD8BF03D27D5E55 /* StepSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepSlider-umbrella.h"; sourceTree = "<group>"; };
-		BC00EB02BDA560B3483F1CE22EB09BDB /* ScalingCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScalingCarousel-umbrella.h"; sourceTree = "<group>"; };
-		C431B60B959B816AB2A938277036D3BE /* StepSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StepSlider.m; path = StepSlider/source/StepSlider/StepSlider.m; sourceTree = "<group>"; };
-		C96FB1B37256E19C42CD66D6B2253DBC /* ScalingCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScalingCarousel.framework; path = ScalingCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DE5BC74101F8321B5527B1A4B6264D /* ScalingCarouselCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselCell.swift; path = ScalingCarousel/Classes/ScalingCarouselCell.swift; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B7389AF5B1B686769D09677E9FCD4AC5 /* ScalingCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScalingCarousel.framework; path = ScalingCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9ADB10F9203D0FCF55D5A80523A516D /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		C554E9F74931D860ECC09109CFF9234A /* StepSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StepSlider.h; path = StepSlider/source/StepSlider/StepSlider.h; sourceTree = "<group>"; };
+		C708B09955050AB1E66C588520F801D7 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		C8B6268B9322082E0EE96DA11A81968B /* ScalingCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScalingCarousel-umbrella.h"; sourceTree = "<group>"; };
+		C928EC76E2EE9A6A7FA2E53C5C57D802 /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		D44EF461367984DC1DD04B3291412703 /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		D46D22F0D88BDB214BBC930774339AFA /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		D4DB7CE35FB121316BB9CCC6F71231FC /* StepSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StepSlider-prefix.pch"; sourceTree = "<group>"; };
+		D8253CAB3FB039471D5AF1AEA22349FD /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D8D0ACD4E63C637C8417296A1BC448D1 /* Pods-Edacious-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Edacious-dummy.m"; sourceTree = "<group>"; };
+		DC417BFD82ACD8737409875948CE6AD0 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		E06D76EB24DFC53091C09A172FF31AE4 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
+		E07C8AA7DC04B2FB7E92FE53F71EAE92 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
 		E552EB66DBC27D80EFD43D13A129B043 /* Pods-Edacious.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Edacious.release.xcconfig"; sourceTree = "<group>"; };
+		E5CA002E5AB7F51ADEE4DE4621798C40 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		E6AB6841DB43017F70F2063926AA02B3 /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
+		E7B59A57835793F6F85CEE5BAE479B3D /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		E8DD1B3DF910F3308B4FBC4B352E1379 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E988092C39E2BDED6A93151AB8A59033 /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		EB2DBB6F23780F93D85FFDCC94C2D888 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		EC95A32934BCA5C600814D1BE81462AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB96B48A86294F31D9090C30E4184FC /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		F507A81CE5F07778F27474A619AD08A2 /* StepSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StepSlider-dummy.m"; sourceTree = "<group>"; };
+		F5331C64E689C23002F561E0FC36944D /* StepSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StepSlider.modulemap; sourceTree = "<group>"; };
+		F76017E8C78873EADB041A809CEB9B31 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		F995DB0A165C7442DF0E41633984C020 /* ScalingCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScalingCarousel-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18DFA4F5C188D15423774196C457ABA4 /* Frameworks */ = {
+		119DE79636DC0CF2DF747428C06FA86D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58F5C3103F7EBAB3DD14F630AA84EE3F /* Foundation.framework in Frameworks */,
+				BEC2A24F0E0691F46B9C77157A42B045 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		820ACECD580F0F655D22CFC7B6ADECDF /* Frameworks */ = {
+		23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F920B6F5E8A4FE303816F67A07B955C8 /* Foundation.framework in Frameworks */,
+				A8D0F1C3405DD1451822DBEDCB4925BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFBB52068020C0DE5609967D8B1B266A /* Frameworks */ = {
+		3096631FEE73E640B329E5BE194F056A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF0A43B7F47D941348821D17E1B30056 /* Foundation.framework in Frameworks */,
+				179859C3C38814D92C9AABEED9CCF6F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ED79173846B4A5F479589F8A2DF400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EED474611F32EE0671C2C73CDB6CD8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9873F24D74B1C6256C9AF2910C829EA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6364AE3257CB35539F5149F68303FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DC35C8140C2D05C96BB66B80220421 /* Foundation.framework in Frameworks */,
+				F2D8D8842B3A86662177D1E7E9AF02B7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065BD3DA551AE6E958F2CD134AD3DB2D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AFDECDA64F47665EC59E1167ADBA0F2 /* Cosmos.modulemap */,
+				1966EBC4986EA9B2770313496E297E2F /* Cosmos.xcconfig */,
+				588C59B8C0C9D4DA8D2B4B1FBA2E2ECA /* Cosmos-dummy.m */,
+				4DE3FCB10087AE8E09D0C8EC24BEC774 /* Cosmos-prefix.pch */,
+				9551808F69AE98000B6998542FC7FEC6 /* Cosmos-umbrella.h */,
+				E8DD1B3DF910F3308B4FBC4B352E1379 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
 		19B6A5EE9858E302E7926C3DAF25D9D3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				2421A85BB8E318A594D8CD76C8E73C97 /* Pods-Edacious */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1D892F39D82FC4853B748A7F2A4C5E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72BF00B553A6A55E615F20A133D85639 /* Cosmos.framework */,
+				6268126382CCD4E1E46256651FC0BCB4 /* Pods_Edacious.framework */,
+				B7389AF5B1B686769D09677E9FCD4AC5 /* ScalingCarousel.framework */,
+				3A99AEB311A114B0E4A325B052EF5EA7 /* StepSlider.framework */,
+				B4731132F632DC1A062E04DDC26C5334 /* XLPagerTabStrip.bundle */,
+				6164050475E24554B55E6E6ABB5AB82E /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2421A85BB8E318A594D8CD76C8E73C97 /* Pods-Edacious */ = {
@@ -129,177 +289,259 @@
 			path = "Target Support Files/Pods-Edacious";
 			sourceTree = "<group>";
 		};
-		288CEB8C9E9541012474F7CBC81DD6CE /* Support Files */ = {
+		2B923ABF008B7238680C260B1DD2F3FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7ACA487257590427D57BB30D47FCD331 /* Info.plist */,
-				4B774C340441BAA6246DE647C5D2C1E3 /* StepSlider.modulemap */,
-				8C4C04D1E0799ACFFE13101129176A7C /* StepSlider.xcconfig */,
-				6A21C1A8971600FD8597B46EC9C15011 /* StepSlider-dummy.m */,
-				8511432B7F98ECBF9404C76A825C8CF8 /* StepSlider-prefix.pch */,
-				B8EA348BB9250C17FAD8BF03D27D5E55 /* StepSlider-umbrella.h */,
+				CD2F3D84B067BE3BB3FF1030B0E3CB3E /* Cosmos */,
+				D58695F049FD17EE9FB5BB9C957D6915 /* ScalingCarousel */,
+				6199D519DD40E99EF6BEC7F78596E8E0 /* StepSlider */,
+				70F3DFAFB3803E2A4356651BCB574BB2 /* XLPagerTabStrip */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/StepSlider";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		76EAEDEACA709FF17F6A4096B388B33F /* ScalingCarousel */ = {
+		367BB909384E4E980EE4776C97AFC2DD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1DE5BC74101F8321B5527B1A4B6264D /* ScalingCarouselCell.swift */,
-				B29EFD0D0E64ECCA438AE56708444B65 /* ScalingCarouselLayout.swift */,
-				3832E95C1811A0FC7CAD9213DAC9B9C5 /* ScalingCarouselView.swift */,
-				B8D66C92E51C410CCE54BBC9002A7D3B /* Support Files */,
+				92BCDF11F3AC4AE2B2FCABB79775EE4E /* Info.plist */,
+				C928EC76E2EE9A6A7FA2E53C5C57D802 /* ResourceBundle-XLPagerTabStrip-Info.plist */,
+				5A63D6D5EBB73F9E7A648261D96FF827 /* XLPagerTabStrip.modulemap */,
+				1E38DE6E828056ECB545EFF43FADF1F2 /* XLPagerTabStrip.xcconfig */,
+				519D35BF3AEC11B1E1E3B097A73C1A03 /* XLPagerTabStrip-dummy.m */,
+				E07C8AA7DC04B2FB7E92FE53F71EAE92 /* XLPagerTabStrip-prefix.pch */,
+				3EC2183027FDA90ADDF5AABEC1C4F326 /* XLPagerTabStrip-umbrella.h */,
 			);
-			name = ScalingCarousel;
-			path = ScalingCarousel;
+			name = "Support Files";
+			path = "../Target Support Files/XLPagerTabStrip";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6199D519DD40E99EF6BEC7F78596E8E0 /* StepSlider */ = {
+			isa = PBXGroup;
+			children = (
+				C554E9F74931D860ECC09109CFF9234A /* StepSlider.h */,
+				8DD7548F5D8AF544BD5DB9F8A979FF21 /* StepSlider.m */,
+				AD195C1CF3E11AB46FFB4F5BA8ECA0F8 /* Support Files */,
+			);
+			name = StepSlider;
+			path = StepSlider;
+			sourceTree = "<group>";
+		};
+		70F3DFAFB3803E2A4356651BCB574BB2 /* XLPagerTabStrip */ = {
+			isa = PBXGroup;
+			children = (
+				513ADB0C1A4E4CF3B2CF9AD9E8BC2031 /* BarPagerTabStripViewController.swift */,
+				64FAFF850EAD9ABF4749D2048A5F27ED /* BarView.swift */,
+				8ECAE534CA84E6E8034B90BDE3F4C5AB /* BaseButtonBarPagerTabStripViewController.swift */,
+				99EA928A8374303A230AA91ABD6B3593 /* ButtonBarPagerTabStripViewController.swift */,
+				E988092C39E2BDED6A93151AB8A59033 /* ButtonBarView.swift */,
+				85B15411CBE4B2D88E215F8ABD9991B5 /* ButtonBarViewCell.swift */,
+				905D76EB4F0742B532B87E2390C811FA /* ButtonCell.xib */,
+				E6AB6841DB43017F70F2063926AA02B3 /* FXPageControl.h */,
+				34DFA96DDAD3BAE6670D391D278C9171 /* FXPageControl.m */,
+				8C92A16B966F81D1C38248076AF199A4 /* IndicatorInfo.swift */,
+				E7B59A57835793F6F85CEE5BAE479B3D /* PagerTabStripBehaviour.swift */,
+				E5CA002E5AB7F51ADEE4DE4621798C40 /* PagerTabStripError.swift */,
+				E06D76EB24DFC53091C09A172FF31AE4 /* PagerTabStripViewController.swift */,
+				B9ADB10F9203D0FCF55D5A80523A516D /* SegmentedPagerTabStripViewController.swift */,
+				30976949E7A61D0330B613A3A6E8ECBA /* SwipeDirection.swift */,
+				76723FBBF22ACB384260721C179B70A0 /* TwitterPagerTabStripViewController.swift */,
+				7C025952277D84E53B0DE8F6FA577954 /* Resources */,
+				367BB909384E4E980EE4776C97AFC2DD /* Support Files */,
+			);
+			name = XLPagerTabStrip;
+			path = XLPagerTabStrip;
+			sourceTree = "<group>";
+		};
+		7C025952277D84E53B0DE8F6FA577954 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A80A6A57036D3EF58ED9441D53B86944 /* Pods */,
-				A541AC43088B61BC00868FC52317184C /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				2B923ABF008B7238680C260B1DD2F3FB /* Pods */,
+				1D892F39D82FC4853B748A7F2A4C5E0D /* Products */,
 				19B6A5EE9858E302E7926C3DAF25D9D3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A541AC43088B61BC00868FC52317184C /* Products */ = {
+		AD195C1CF3E11AB46FFB4F5BA8ECA0F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				22A4EF9AFE3F7CF18FD935203648DE11 /* Pods_Edacious.framework */,
-				C96FB1B37256E19C42CD66D6B2253DBC /* ScalingCarousel.framework */,
-				762232D6B366DB09FA45420751C3E04F /* StepSlider.framework */,
+				EC95A32934BCA5C600814D1BE81462AF /* Info.plist */,
+				F5331C64E689C23002F561E0FC36944D /* StepSlider.modulemap */,
+				17F52CF15F6C75D4A54DDC6F59AB6125 /* StepSlider.xcconfig */,
+				F507A81CE5F07778F27474A619AD08A2 /* StepSlider-dummy.m */,
+				D4DB7CE35FB121316BB9CCC6F71231FC /* StepSlider-prefix.pch */,
+				2E8AB2DFC825905E127F8AA395AE0BB7 /* StepSlider-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/StepSlider";
 			sourceTree = "<group>";
 		};
-		A80A6A57036D3EF58ED9441D53B86944 /* Pods */ = {
+		CD2F3D84B067BE3BB3FF1030B0E3CB3E /* Cosmos */ = {
 			isa = PBXGroup;
 			children = (
-				76EAEDEACA709FF17F6A4096B388B33F /* ScalingCarousel */,
-				FB46CB027A26C3C13CC13F7D5ED12F79 /* StepSlider */,
+				2211BC86B4E5F69EC173DE05795D8DA8 /* CosmosAccessibility.swift */,
+				D44EF461367984DC1DD04B3291412703 /* CosmosDefaultSettings.swift */,
+				54A7ABA22EF31D9F48577BC3D5528FBC /* CosmosLayerHelper.swift */,
+				EB2DBB6F23780F93D85FFDCC94C2D888 /* CosmosLayers.swift */,
+				3DE61015A0D1A05C04890997BA5F3556 /* CosmosLocalizedRating.swift */,
+				9D529534C7FDE88DC7295DF7B8E0B312 /* CosmosRating.swift */,
+				08C6E2B0D72996164490CD1ECDCFAC74 /* CosmosSettings.swift */,
+				D8253CAB3FB039471D5AF1AEA22349FD /* CosmosSize.swift */,
+				F76017E8C78873EADB041A809CEB9B31 /* CosmosText.swift */,
+				C708B09955050AB1E66C588520F801D7 /* CosmosTouch.swift */,
+				EDB96B48A86294F31D9090C30E4184FC /* CosmosTouchTarget.swift */,
+				DC417BFD82ACD8737409875948CE6AD0 /* CosmosView.swift */,
+				A40A93554345A1DED5CE66D7AFAA48CA /* RightToLeft.swift */,
+				9C8B6E6ABA6D0E5D08CCECF849B17B14 /* StarFillMode.swift */,
+				D46D22F0D88BDB214BBC930774339AFA /* StarLayer.swift */,
+				065BD3DA551AE6E958F2CD134AD3DB2D /* Support Files */,
 			);
-			name = Pods;
+			name = Cosmos;
+			path = Cosmos;
 			sourceTree = "<group>";
 		};
-		B8D66C92E51C410CCE54BBC9002A7D3B /* Support Files */ = {
+		D58695F049FD17EE9FB5BB9C957D6915 /* ScalingCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				6822E4D3E74D1B6B5D14F38FEC0A4DBB /* Info.plist */,
-				2F4C22C1CF81929F01BFBBD1F9B4E532 /* ScalingCarousel.modulemap */,
-				1D1D0470CC84B003591158BC27600B40 /* ScalingCarousel.xcconfig */,
-				632944D4F3F115B7D5E0670E006F12CC /* ScalingCarousel-dummy.m */,
-				4399AF9E763B96B451236C4F2BFA281A /* ScalingCarousel-prefix.pch */,
-				BC00EB02BDA560B3483F1CE22EB09BDB /* ScalingCarousel-umbrella.h */,
+				37E14320706C5F8ABEBB34D94E370FD1 /* ScalingCarouselCell.swift */,
+				914A1FF349BEE3B8C04AF710C96F1371 /* ScalingCarouselLayout.swift */,
+				B15FCBF24F0B1FE3964DBC602C6A48D3 /* ScalingCarouselView.swift */,
+				F8717B0CA75222CD162074108EDAAB5D /* Support Files */,
+			);
+			name = ScalingCarousel;
+			path = ScalingCarousel;
+			sourceTree = "<group>";
+		};
+		F8717B0CA75222CD162074108EDAAB5D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				713D72F89B02983AAE2031159D688254 /* Info.plist */,
+				697917AD3CB068E058C39DE5D9C344B6 /* ScalingCarousel.modulemap */,
+				937DB96AA4959A29173683244E597C1B /* ScalingCarousel.xcconfig */,
+				45C2D361B28DCE72AD5975DB5025C244 /* ScalingCarousel-dummy.m */,
+				F995DB0A165C7442DF0E41633984C020 /* ScalingCarousel-prefix.pch */,
+				C8B6268B9322082E0EE96DA11A81968B /* ScalingCarousel-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ScalingCarousel";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		FB46CB027A26C3C13CC13F7D5ED12F79 /* StepSlider */ = {
-			isa = PBXGroup;
-			children = (
-				A25215A212E0C7FFA5347287F48BBB8D /* StepSlider.h */,
-				C431B60B959B816AB2A938277036D3BE /* StepSlider.m */,
-				288CEB8C9E9541012474F7CBC81DD6CE /* Support Files */,
-			);
-			name = StepSlider;
-			path = StepSlider;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4802195454F9C0EDA3742F016F837707 /* Headers */ = {
+		364D36FADD3F936B2440141EE707E4E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB2D316F508934BAD6C774D3C231453 /* StepSlider-umbrella.h in Headers */,
-				1DA199D195C145A2FBE09B245F3BC7CA /* StepSlider.h in Headers */,
+				59DA205020397800E911C9FD6992271B /* FXPageControl.h in Headers */,
+				A79840ADD49B4775C1524342D6551CFB /* XLPagerTabStrip-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E174366C90D24727BDC0B4A297B7CE9 /* Headers */ = {
+		4DF773DCE2886C173C2690C352B55717 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DB36A5D35110269322A80703A82C82 /* ScalingCarousel-umbrella.h in Headers */,
+				23E7CF2B105F6CD8AEB12CCFE4A2536C /* Pods-Edacious-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A78A789AAC02679C36DD48BECE7F8EF9 /* Headers */ = {
+		532F8C06635E965CD7CC8537C51F81E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE71FC7565A21836028FFA6A51E4BC6F /* Pods-Edacious-umbrella.h in Headers */,
+				A592068099B5B5CC8C9E28CC37372D36 /* ScalingCarousel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CE0D7749BC4A26CCF3CF99AFA629C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58CD974FF05B4346E70B047030F003F /* StepSlider-umbrella.h in Headers */,
+				9C83E3953D5DB92348BC45772B8CA3B4 /* StepSlider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F72A88918035AFA923560A84B87C61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5E91A47C1BF6869DF17747D61C2FF1 /* Cosmos-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D7D0DE4F8D75E97E6BDA61B0BD2C9D09 /* ScalingCarousel */ = {
+		3C29481CE04EF753B60FE6A0FF890702 /* XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A052A13D1346AB316E035EBD7F8755 /* Build configuration list for PBXNativeTarget "ScalingCarousel" */;
+			buildConfigurationList = 0EE76856E08416F5620B0E1D8FBB8708 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
 			buildPhases = (
-				CED504F0CBADCC1DF15A11B88A942737 /* Sources */,
-				820ACECD580F0F655D22CFC7B6ADECDF /* Frameworks */,
-				9E174366C90D24727BDC0B4A297B7CE9 /* Headers */,
+				AF3D4808479864AB8242253F936AC720 /* Sources */,
+				A6364AE3257CB35539F5149F68303FC9 /* Frameworks */,
+				D42ED313CDB1258C3A4BA277DF61DE44 /* Resources */,
+				364D36FADD3F936B2440141EE707E4E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BF1864EE74BA375522944351C7BED8A /* PBXTargetDependency */,
+			);
+			name = XLPagerTabStrip;
+			productName = XLPagerTabStrip;
+			productReference = 6164050475E24554B55E6E6ABB5AB82E /* XLPagerTabStrip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */;
+			buildPhases = (
+				64A8AA816E108F31E7CEE1A683E42839 /* Sources */,
+				23E1D2C8911A1F4127AF93A478D985B5 /* Frameworks */,
+				B7F72A88918035AFA923560A84B87C61 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ScalingCarousel;
-			productName = ScalingCarousel;
-			productReference = C96FB1B37256E19C42CD66D6B2253DBC /* ScalingCarousel.framework */;
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = 72BF00B553A6A55E615F20A133D85639 /* Cosmos.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F002FE4974CEC5D0D35C5952F6F20BC8 /* Pods-Edacious */ = {
+		72450866DE724FF857031D57D4261A27 /* StepSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31EF0A995B61B9F07D4ECB0840A9ABCA /* Build configuration list for PBXNativeTarget "Pods-Edacious" */;
+			buildConfigurationList = A8906B3878129763576464E45E826A2E /* Build configuration list for PBXNativeTarget "StepSlider" */;
 			buildPhases = (
-				5C7F5E4948FB2610744D69F8A33FA7FD /* Sources */,
-				EFBB52068020C0DE5609967D8B1B266A /* Frameworks */,
-				A78A789AAC02679C36DD48BECE7F8EF9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2DCA4C2B0FBE5A7FC75AEC67E3F2FD9C /* PBXTargetDependency */,
-				E75A9EF72AD8403F4DA7D8BBBC29D8B4 /* PBXTargetDependency */,
-			);
-			name = "Pods-Edacious";
-			productName = "Pods-Edacious";
-			productReference = 22A4EF9AFE3F7CF18FD935203648DE11 /* Pods_Edacious.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F427185CE20E519CC597AFD5083CC27D /* StepSlider */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3321BE36E23ABC2957ACE597588EC2FC /* Build configuration list for PBXNativeTarget "StepSlider" */;
-			buildPhases = (
-				26FD8711452D9D52D45D689AC670FB64 /* Sources */,
-				18DFA4F5C188D15423774196C457ABA4 /* Frameworks */,
-				4802195454F9C0EDA3742F016F837707 /* Headers */,
+				4B9DE27321A26FC5D22825C90680B36B /* Sources */,
+				119DE79636DC0CF2DF747428C06FA86D /* Frameworks */,
+				A5CE0D7749BC4A26CCF3CF99AFA629C2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -307,7 +549,62 @@
 			);
 			name = StepSlider;
 			productName = StepSlider;
-			productReference = 762232D6B366DB09FA45420751C3E04F /* StepSlider.framework */;
+			productReference = 3A99AEB311A114B0E4A325B052EF5EA7 /* StepSlider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7E156F0392617A8BAC2869F0E2241189 /* XLPagerTabStrip-XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7352BA8874E2F0235D7BE445E232B503 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildPhases = (
+				C3DBAA44232680073C6B60807949AAA6 /* Sources */,
+				9873F24D74B1C6256C9AF2910C829EA5 /* Frameworks */,
+				8407BBBC2358915069A9DE4E3DCE47EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			productName = "XLPagerTabStrip-XLPagerTabStrip";
+			productReference = B4731132F632DC1A062E04DDC26C5334 /* XLPagerTabStrip.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A3F32A8B8FFA6D7D8070B9DD140D4C52 /* ScalingCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3983F18D2F7F8BA872F0C8C06248630 /* Build configuration list for PBXNativeTarget "ScalingCarousel" */;
+			buildPhases = (
+				7A35D82685E4813E54CA47D83E3A80CB /* Sources */,
+				3096631FEE73E640B329E5BE194F056A /* Frameworks */,
+				532F8C06635E965CD7CC8537C51F81E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScalingCarousel;
+			productName = ScalingCarousel;
+			productReference = B7389AF5B1B686769D09677E9FCD4AC5 /* ScalingCarousel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB2E61F53546052BBA388BF1A23D9473 /* Pods-Edacious */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9B3E26782CFA707071B96EA43636AD /* Build configuration list for PBXNativeTarget "Pods-Edacious" */;
+			buildPhases = (
+				C45ADC758F434B1EF63CBF781051C3F0 /* Sources */,
+				43ED79173846B4A5F479589F8A2DF400 /* Frameworks */,
+				4DF773DCE2886C173C2690C352B55717 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEA3B30A85757B82C736A9CF8AB73DD9 /* PBXTargetDependency */,
+				58EAFB4F4DEE8A8816CABFBBFE2CECFB /* PBXTargetDependency */,
+				AC64BACBF1419F8DA46AFFBE66D345C7 /* PBXTargetDependency */,
+				77EA9EAD40C663F0F8E522F43500CDC9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Edacious";
+			productName = "Pods-Edacious";
+			productReference = 6268126382CCD4E1E46256651FC0BCB4 /* Pods_Edacious.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -327,67 +624,195 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A541AC43088B61BC00868FC52317184C /* Products */;
+			productRefGroup = 1D892F39D82FC4853B748A7F2A4C5E0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F002FE4974CEC5D0D35C5952F6F20BC8 /* Pods-Edacious */,
-				D7D0DE4F8D75E97E6BDA61B0BD2C9D09 /* ScalingCarousel */,
-				F427185CE20E519CC597AFD5083CC27D /* StepSlider */,
+				4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */,
+				DB2E61F53546052BBA388BF1A23D9473 /* Pods-Edacious */,
+				A3F32A8B8FFA6D7D8070B9DD140D4C52 /* ScalingCarousel */,
+				72450866DE724FF857031D57D4261A27 /* StepSlider */,
+				3C29481CE04EF753B60FE6A0FF890702 /* XLPagerTabStrip */,
+				7E156F0392617A8BAC2869F0E2241189 /* XLPagerTabStrip-XLPagerTabStrip */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8407BBBC2358915069A9DE4E3DCE47EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61657D8EF972A2872544BE7D84C71B7B /* ButtonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D42ED313CDB1258C3A4BA277DF61DE44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C017C4DB1E2D549874913875AF74ED /* XLPagerTabStrip.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		26FD8711452D9D52D45D689AC670FB64 /* Sources */ = {
+		4B9DE27321A26FC5D22825C90680B36B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4FBEBF0EBF952DF64D291E03EF7D85 /* StepSlider-dummy.m in Sources */,
-				9B51200311C3389B8B1C8931EDFF36BE /* StepSlider.m in Sources */,
+				B12CE2C130491705B3C0FB7E40BECA9F /* StepSlider-dummy.m in Sources */,
+				09B4606245325F50590DE91475EAB71B /* StepSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C7F5E4948FB2610744D69F8A33FA7FD /* Sources */ = {
+		64A8AA816E108F31E7CEE1A683E42839 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7981058507E0AF61DEF56C5FB362E302 /* Pods-Edacious-dummy.m in Sources */,
+				3DF6ECF23D38E7DA5B5B2B43707F2F4D /* Cosmos-dummy.m in Sources */,
+				7CC5A43D7E1372EB6292FCBC0151A36E /* CosmosAccessibility.swift in Sources */,
+				371F422D050761A63F0156F537B8902D /* CosmosDefaultSettings.swift in Sources */,
+				F66DE3EF01408C42C115587B201CB541 /* CosmosLayerHelper.swift in Sources */,
+				AA971D9492DD9B9E288045C2C0CC9A99 /* CosmosLayers.swift in Sources */,
+				0EC88D04EAE0CD3EFD3C3C89C1B9F45F /* CosmosLocalizedRating.swift in Sources */,
+				99F08F6FE2B165EEBD5E01EDDA176620 /* CosmosRating.swift in Sources */,
+				015C902B9C0E63DA0519A0D34E10F739 /* CosmosSettings.swift in Sources */,
+				25DFA72039CBA011EBA738AA73084A8E /* CosmosSize.swift in Sources */,
+				424AD9605CBDCD867083B9820784E0AC /* CosmosText.swift in Sources */,
+				4F40A9CBB316E7100828F0C6F5714946 /* CosmosTouch.swift in Sources */,
+				E2D8D1AA0D41C73C4B570DE682C05D72 /* CosmosTouchTarget.swift in Sources */,
+				45F546D14166EDEE46371951EC705C03 /* CosmosView.swift in Sources */,
+				C79D2F2FCE3EF9B31D1222E0C4A59DC5 /* RightToLeft.swift in Sources */,
+				88BA9FFC474BD7B995A0CEA06FF431F7 /* StarFillMode.swift in Sources */,
+				C95B658D689425ED9DAA95EB479B44A6 /* StarLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CED504F0CBADCC1DF15A11B88A942737 /* Sources */ = {
+		7A35D82685E4813E54CA47D83E3A80CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A5B4903AD575BA71682A29544AB44A6 /* ScalingCarousel-dummy.m in Sources */,
-				889E93F5CFD4E28F3973C334DAB1E314 /* ScalingCarouselCell.swift in Sources */,
-				4F4B9403FFA2854A8C117D2271E0FA8A /* ScalingCarouselLayout.swift in Sources */,
-				FF85B0A754AE7A758D7D7FED3D762DBC /* ScalingCarouselView.swift in Sources */,
+				153A9D16EFA537FC32006486BD30B78C /* ScalingCarousel-dummy.m in Sources */,
+				348FF16C80A0D33FE5284C0898439D4F /* ScalingCarouselCell.swift in Sources */,
+				CB12B145F07EEF22DDB8E3B389B8348E /* ScalingCarouselLayout.swift in Sources */,
+				7E3C9411419294DB55B48B282DC1AE64 /* ScalingCarouselView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3D4808479864AB8242253F936AC720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5F99EA9EF099F7A79BB53BF01164B5 /* BarPagerTabStripViewController.swift in Sources */,
+				61483AC2C47A3E854553BA3BF6CEAD3F /* BarView.swift in Sources */,
+				FFF053815A6B7FF199DECCE49C751161 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				B55EF9F10CAD705067F4058408908D8F /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				61BB0ADA351A7FCBD20C56C7B6F10BB7 /* ButtonBarView.swift in Sources */,
+				8F3F8E2CE3F85051310C973698E38F0F /* ButtonBarViewCell.swift in Sources */,
+				6295FD659102F86BD0BD7ABD379DA054 /* ButtonCell.xib in Sources */,
+				A9C56D6D3C2F00D288EB3BFDC2AF0879 /* FXPageControl.m in Sources */,
+				7BAF22174A3A77C50E776F2A9AA0447C /* IndicatorInfo.swift in Sources */,
+				F81B79D8B7EB4BACCF8D955A91FA4948 /* PagerTabStripBehaviour.swift in Sources */,
+				980ED5968A5E420CA16FB9B9EB94144D /* PagerTabStripError.swift in Sources */,
+				7F047043689900EE6750C99C36F2824A /* PagerTabStripViewController.swift in Sources */,
+				0C6DA3AD1C9C749161112C49398F4224 /* SegmentedPagerTabStripViewController.swift in Sources */,
+				2025BA3D8454D2D9DF27405766592073 /* SwipeDirection.swift in Sources */,
+				BCE0E291361150CF8A9494D7A6D432BF /* TwitterPagerTabStripViewController.swift in Sources */,
+				147921F8728391C47F99E5767C89B571 /* XLPagerTabStrip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DBAA44232680073C6B60807949AAA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45ADC758F434B1EF63CBF781051C3F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A099E25EF20B3D5E8386E7A7343CEE /* Pods-Edacious-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2DCA4C2B0FBE5A7FC75AEC67E3F2FD9C /* PBXTargetDependency */ = {
+		58EAFB4F4DEE8A8816CABFBBFE2CECFB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ScalingCarousel;
-			target = D7D0DE4F8D75E97E6BDA61B0BD2C9D09 /* ScalingCarousel */;
-			targetProxy = AFF5640FC89B0FC6CA3CC8E979A68FBB /* PBXContainerItemProxy */;
+			target = A3F32A8B8FFA6D7D8070B9DD140D4C52 /* ScalingCarousel */;
+			targetProxy = E38DCDEAF3726A1D975427BB206250CC /* PBXContainerItemProxy */;
 		};
-		E75A9EF72AD8403F4DA7D8BBBC29D8B4 /* PBXTargetDependency */ = {
+		77EA9EAD40C663F0F8E522F43500CDC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLPagerTabStrip;
+			target = 3C29481CE04EF753B60FE6A0FF890702 /* XLPagerTabStrip */;
+			targetProxy = C0C484C3BFC61518344EEDE0FE1EBD5C /* PBXContainerItemProxy */;
+		};
+		7BF1864EE74BA375522944351C7BED8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			target = 7E156F0392617A8BAC2869F0E2241189 /* XLPagerTabStrip-XLPagerTabStrip */;
+			targetProxy = 27CC541262BEAA4F7017E91592B6A29F /* PBXContainerItemProxy */;
+		};
+		AC64BACBF1419F8DA46AFFBE66D345C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = StepSlider;
-			target = F427185CE20E519CC597AFD5083CC27D /* StepSlider */;
-			targetProxy = 186848D613C8A8108D7EDDDEE0209F26 /* PBXContainerItemProxy */;
+			target = 72450866DE724FF857031D57D4261A27 /* StepSlider */;
+			targetProxy = F4D5935CCACD762FA074250F19C32B4E /* PBXContainerItemProxy */;
+		};
+		FEA3B30A85757B82C736A9CF8AB73DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 4FDC533A4360A68ABDCE852F04B30927 /* Cosmos */;
+			targetProxy = 3C5393C334051403E4AE31F58EF3A272 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C9BCC4D95B70B62F18C9CDFF1AB1E8B /* Debug */ = {
+		0BA5A1C6C8EF18C2C916BF34F23343EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C4C04D1E0799ACFFE13101129176A7C /* StepSlider.xcconfig */;
+			baseConfigurationReference = 8F55BEDCEB0B9F5B0E9D66509B3A53AC /* Pods-Edacious.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Edacious/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Edacious/Pods-Edacious.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Edacious;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		222248C667C27B14AFED0BD0AD3BCF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F52CF15F6C75D4A54DDC6F59AB6125 /* StepSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -408,6 +833,38 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A7C13071A15DBA49DAD93AFE2E8D53F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E38DE6E828056ECB545EFF43FADF1F2 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -478,9 +935,9 @@
 			};
 			name = Debug;
 		};
-		32F11540FB47587C0DB299632745C428 /* Release */ = {
+		37A5EA05E17D349BB1BEBCDF86473DB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D1D0470CC84B003591158BC27600B40 /* ScalingCarousel.xcconfig */;
+			baseConfigurationReference = 937DB96AA4959A29173683244E597C1B /* ScalingCarousel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -510,9 +967,9 @@
 			};
 			name = Release;
 		};
-		48AACFE06D53BBFBE9AB73B0056AC2D6 /* Debug */ = {
+		3D3F44B66A238CE49A52F23A785FABEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D1D0470CC84B003591158BC27600B40 /* ScalingCarousel.xcconfig */;
+			baseConfigurationReference = 1966EBC4986EA9B2770313496E297E2F /* Cosmos.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -523,13 +980,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ScalingCarousel/ScalingCarousel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScalingCarousel/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ScalingCarousel/ScalingCarousel.modulemap";
-				PRODUCT_NAME = ScalingCarousel;
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_NAME = Cosmos;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -541,9 +998,57 @@
 			};
 			name = Debug;
 		};
-		7005F3E4FEEE4CB8743F9C327D8544D1 /* Release */ = {
+		659C49EB78C223808F096000090DE9DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C4C04D1E0799ACFFE13101129176A7C /* StepSlider.xcconfig */;
+			baseConfigurationReference = 1966EBC4986EA9B2770313496E297E2F /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA4ED1FD377A30A771D97A4B5958FF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E38DE6E828056ECB545EFF43FADF1F2 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BA47236199B97AE111C538A8C9E43063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F52CF15F6C75D4A54DDC6F59AB6125 /* StepSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -566,52 +1071,15 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9043400BDEBDFE9135367DBCA72A68A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F55BEDCEB0B9F5B0E9D66509B3A53AC /* Pods-Edacious.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Edacious/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Edacious/Pods-Edacious.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Edacious;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		977648C85AA1B3C9709CCF942234989E /* Release */ = {
+		BF3BC6345C699FB465E04DEA9FEDF970 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E552EB66DBC27D80EFD43D13A129B043 /* Pods-Edacious.release.xcconfig */;
+			baseConfigurationReference = 937DB96AA4959A29173683244E597C1B /* ScalingCarousel.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -621,26 +1089,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Edacious/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ScalingCarousel/ScalingCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScalingCarousel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Edacious/Pods-Edacious.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Edacious;
+				MODULEMAP_FILE = "Target Support Files/ScalingCarousel/ScalingCarousel.modulemap";
+				PRODUCT_NAME = ScalingCarousel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		CA33F186435244FD0FD5B7325332656C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -700,9 +1165,101 @@
 			};
 			name = Release;
 		};
+		CF8297647072145CBBB59FED0BCBC341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E38DE6E828056ECB545EFF43FADF1F2 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDBE693A58C64C4DD35F0EEDC3258731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E38DE6E828056ECB545EFF43FADF1F2 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E24AC44D0649D952EFEA8CE3EF592894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E552EB66DBC27D80EFD43D13A129B043 /* Pods-Edacious.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Edacious/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Edacious/Pods-Edacious.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Edacious;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0EE76856E08416F5620B0E1D8FBB8708 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7C13071A15DBA49DAD93AFE2E8D53F /* Debug */,
+				CF8297647072145CBBB59FED0BCBC341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -712,29 +1269,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31EF0A995B61B9F07D4ECB0840A9ABCA /* Build configuration list for PBXNativeTarget "Pods-Edacious" */ = {
+		38CA41A3E689F135BAEECE91B63D9EA0 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9043400BDEBDFE9135367DBCA72A68A4 /* Debug */,
-				977648C85AA1B3C9709CCF942234989E /* Release */,
+				3D3F44B66A238CE49A52F23A785FABEA /* Debug */,
+				659C49EB78C223808F096000090DE9DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3321BE36E23ABC2957ACE597588EC2FC /* Build configuration list for PBXNativeTarget "StepSlider" */ = {
+		7352BA8874E2F0235D7BE445E232B503 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C9BCC4D95B70B62F18C9CDFF1AB1E8B /* Debug */,
-				7005F3E4FEEE4CB8743F9C327D8544D1 /* Release */,
+				DDBE693A58C64C4DD35F0EEDC3258731 /* Debug */,
+				AA4ED1FD377A30A771D97A4B5958FF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A052A13D1346AB316E035EBD7F8755 /* Build configuration list for PBXNativeTarget "ScalingCarousel" */ = {
+		A8906B3878129763576464E45E826A2E /* Build configuration list for PBXNativeTarget "StepSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48AACFE06D53BBFBE9AB73B0056AC2D6 /* Debug */,
-				32F11540FB47587C0DB299632745C428 /* Release */,
+				BA47236199B97AE111C538A8C9E43063 /* Debug */,
+				222248C667C27B14AFED0BD0AD3BCF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3983F18D2F7F8BA872F0C8C06248630 /* Build configuration list for PBXNativeTarget "ScalingCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3BC6345C699FB465E04DEA9FEDF970 /* Debug */,
+				37A5EA05E17D349BB1BEBCDF86473DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9B3E26782CFA707071B96EA43636AD /* Build configuration list for PBXNativeTarget "Pods-Edacious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA5A1C6C8EF18C2C916BF34F23343EF /* Debug */,
+				E24AC44D0649D952EFEA8CE3EF592894 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

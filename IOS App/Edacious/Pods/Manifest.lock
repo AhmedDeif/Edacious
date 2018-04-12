@@ -1,15 +1,21 @@
 PODS:
+  - Cosmos (15.0.0)
   - ScalingCarousel (1.0.3)
   - StepSlider (1.0.2)
+  - XLPagerTabStrip (8.0.1)
 
 DEPENDENCIES:
+  - Cosmos (~> 15.0)
   - ScalingCarousel
   - StepSlider
+  - XLPagerTabStrip (~> 8.0)
 
 SPEC CHECKSUMS:
+  Cosmos: a6dbd3d0baa0cc8f51f8598f7508d5a09d0a9ade
   ScalingCarousel: c1ce9b7f97c423614773328b762b5b723ed9ff7e
   StepSlider: 67b0c59519e253df9de599043bc76397d68310b2
+  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: dfff293bf924a7688db626b24d71989a4ddd95b6
+PODFILE CHECKSUM: a38315399b88ec34bec51c0f5d5a6a6d76a1902a
 
 COCOAPODS: 1.4.0

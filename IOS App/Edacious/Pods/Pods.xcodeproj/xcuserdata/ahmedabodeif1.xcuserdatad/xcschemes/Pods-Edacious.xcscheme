@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F002FE4974CEC5D0D35C5952F6F20BC8"
+               BlueprintIdentifier = "DB2E61F53546052BBA388BF1A23D9473"
                BuildableName = "Pods_Edacious.framework"
                BlueprintName = "Pods-Edacious"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F002FE4974CEC5D0D35C5952F6F20BC8"
+            BlueprintIdentifier = "DB2E61F53546052BBA388BF1A23D9473"
             BuildableName = "Pods_Edacious.framework"
             BlueprintName = "Pods-Edacious"
             ReferencedContainer = "container:Pods.xcodeproj">

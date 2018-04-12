@@ -51,5 +51,142 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Edacious/RecipeTabbedViewController.swift"
+            timestampString = "545221307.34633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/XLPagerTabStrip/Sources/ButtonBarPagerTabStripViewController.swift"
+            timestampString = "544362329.4349459"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "calculateWidths()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Edacious/RecipeTabbedViewController.swift"
+            timestampString = "545221307.346424"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Edacious/RecipeTimelineViewController.swift"
+            timestampString = "544363276.5101269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Edacious.RecipeTimelineViewController.__deallocating_deinit"
+                  moduleName = "Edacious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedabodeif1/Documents/Code/Edacious/IOS%20App/Edacious/Edacious/RecipeTimelineViewController.swift"
+                  timestampString = "544363443.244314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Edacious.RecipeTimelineViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Edacious.RecipeTimelineViewController"
+                  moduleName = "Edacious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedabodeif1/Documents/Code/Edacious/IOS%20App/Edacious/Edacious/RecipeTimelineViewController.swift"
+                  timestampString = "544363443.246556"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Edacious.RecipeTimelineViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Edacious.RecipeTimelineViewController"
+                  moduleName = "Edacious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedabodeif1/Documents/Code/Edacious/IOS%20App/Edacious/Edacious/RecipeTimelineViewController.swift"
+                  timestampString = "544363443.249896"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Edacious.RecipeTimelineViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Edacious.RecipeTimelineViewController&gt;"
+                  moduleName = "Edacious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedabodeif1/Documents/Code/Edacious/IOS%20App/Edacious/Edacious/RecipeTimelineViewController.swift"
+                  timestampString = "544363443.25249"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Edacious.RecipeTimelineViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Edacious.RecipeTimelineViewController&gt;"
+                  moduleName = "Edacious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmedabodeif1/Documents/Code/Edacious/IOS%20App/Edacious/Edacious/RecipeTimelineViewController.swift"
+                  timestampString = "544363443.254355"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
